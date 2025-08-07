@@ -1,0 +1,44 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "features": "Funktionen",
+    "performance": "Leistung",
+    "pricing": "Preise",
+    "support": "Support",
+    "signalsApp": "Signale App"
+  },
+  "common": {
+    "downloadFor": "Herunterladen für {{platform}}",
+    "downloadFree": "Kostenlos Herunterladen",
+    "getStarted": "Loslegen",
+    "learnMore": "Mehr Erfahren",
+    "viewResults": "Ergebnisse Anzeigen",
+    "contactSupport": "Support Kontaktieren",
+    "faq": "Häufige Fragen",
+    "loading": "Lädt...",
+    "error": "Fehler",
+    "success": "Erfolg",
+    "tradingSignals": "Trading-Signale",
+    "goldTrading": "Gold-Trading",
+    "xauusd": "XAUUSD",
+    "professionalTraders": "Professionelle Trader"
+  },
+  "hero": {
+    "title": "Beherrschen Sie die XAUUSD-Märkte",
+    "titleHighlight": "mit Gold Sniper",
+    "subtitle": "Wenn Sie es ernst meinen mit dem Gold-Trading, brauchen Sie nur die besten Gold-Trading-Signale. Gold Sniper ist Ihr One-Stop-Shop für alles rund um Gold.",
+    "stats": {
+      "accuracy": "93% Genauigkeit",
+      "users": "17K+ Nutzer",
+      "coverage": "24/7 Abdeckung",
+      "delivery": "< 1s Lieferung"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "GoldSniper - Die #1 Gold Trading Signale App 🔥",
+      "description": "Zugang zu den besten GOLD-Signalen für XAUUSD-Trading auf den Märkten. 93% profitable Trades mit unserer Premium Gold-Trading-Signale-App.",
+      "keywords": "gold trading signale, XAUUSD signale, gold trading app, kostenlose trading signale, goldpreis alerts, trading plattform, forex signale, goldmarkt analyse"
+    }
+  }
+}

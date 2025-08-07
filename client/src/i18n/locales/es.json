@@ -1,0 +1,75 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "features": "Características",
+    "performance": "Rendimiento",
+    "pricing": "Precios",
+    "support": "Soporte",
+    "signalsApp": "App de Señales"
+  },
+  "common": {
+    "downloadFor": "Descargar para {{platform}}",
+    "downloadFree": "Descarga Gratis",
+    "getStarted": "Comenzar",
+    "learnMore": "Saber Más",
+    "viewResults": "Ver Resultados",
+    "contactSupport": "Contactar Soporte",
+    "faq": "Preguntas Frecuentes",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "tradingSignals": "Señales de Trading",
+    "goldTrading": "Trading de Oro",
+    "xauusd": "XAUUSD",
+    "professionalTraders": "Traders Profesionales"
+  },
+  "hero": {
+    "title": "Domina los mercados XAUUSD",
+    "titleHighlight": "con Gold Sniper",
+    "subtitle": "Si hablas en serio sobre el trading de oro, no necesitas más que las mejores señales de trading de oro. Gold Sniper es tu tienda integral para todo lo relacionado con el oro.",
+    "stats": {
+      "accuracy": "93% Precisión",
+      "users": "17K+ Usuarios",
+      "coverage": "Cobertura 24/7",
+      "delivery": "< 1s Entrega"
+    }
+  },
+  "features": {
+    "title": "¿Por qué elegir Gold Sniper?",
+    "subtitle": "Proporcionamos señales en tiempo real diariamente y siempre nos enfocamos en las mejores opciones en lugar de hacer sobretrading con las malas. Nuestras señales gratuitas de oro te permitirán ganar de las maneras más eficientes y convenientes posibles.",
+    "cards": {
+      "experienced": {
+        "title": "Traders experimentados a tu lado 🥇",
+        "description": "Nuestros expertos en trading están aquí para ayudarte. Usa sus más de 10 años de experiencia para finalmente ingresar al mercado del oro."
+      },
+      "signals": {
+        "title": "Señales de Compra y Venta de Oro 🥇",
+        "description": "Recibe nuestras señales en tu teléfono y comienza a hacer trading con más éxito. Puedes hacer trading cuando y donde quieras si sigues nuestras señales en vivo de precio del oro con alertas en tiempo real a través de notificaciones móviles."
+      },
+      "overwhelmed": {
+        "title": "Nunca te sientas abrumado por el trading del mercado del Oro 🥇",
+        "description": "El conocimiento es poder; mientras más sepas, mejor será tu juego de trading. Solo los trades más fuertes en las condiciones actuales del mercado son proporcionados por nuestros analistas de trading."
+      },
+      "interface": {
+        "title": "Interfaz Simple y Fácil de Usar 🥇",
+        "description": "¡No necesitas perder tiempo tratando de entender una interfaz confusa! La aplicación móvil Gold Sniper cuenta con un diseño simple y fácil de usar que te da precisamente lo que necesitas sin complicaciones ni esfuerzo. Puedes navegar rápidamente por todas las páginas."
+      }
+    }
+  },
+  "video": {
+    "title": "Ve GoldSniper en Acción",
+    "subtitle": "Observa cómo los traders profesionales usan nuestra aplicación móvil para recibir y ejecutar señales de trading de oro de alta precisión."
+  },
+  "seo": {
+    "home": {
+      "title": "GoldSniper - La App #1 de Señales de Trading de Oro 🔥",
+      "description": "Accede a las mejores señales de ORO para hacer trading de XAUUSD en los mercados. 93% de trades rentables con nuestra app premium de señales de trading de oro.",
+      "keywords": "señales de trading de oro, señales XAUUSD, app de trading de oro, señales de trading gratis, alertas de precio del oro, plataforma de trading, señales forex, análisis del mercado del oro"
+    },
+    "signalsApp": {
+      "title": "Características de la App GoldSniper - Señales Profesionales de Trading de Oro",
+      "description": "Descubre las características avanzadas de GoldSniper para trading de XAUUSD. Obtén señales 93% precisas, alertas en tiempo real, análisis experto y herramientas profesionales de trading móvil.",
+      "keywords": "características app goldsniper, app trading XAUUSD, app móvil señales oro, alertas trading, análisis profesional oro, plataforma trading móvil"
+    }
+  }
+}

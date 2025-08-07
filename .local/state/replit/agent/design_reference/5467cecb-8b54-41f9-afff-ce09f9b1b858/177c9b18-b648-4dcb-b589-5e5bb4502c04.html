@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoldSniper - The #1 Gold Trading Signals App 🔥</title>
+    <meta name="description" content="Access the best GOLD signals for trading XAUUSD in the markets. 93% profitable trades with our premium gold trading signals app.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-orange': '#C79901',
+                        'green-success': '#00d3b7',
+                        'red-loss': '#ff4d6d',
+                        'amber-accent': '#f59e0b',
+                        'text-primary': '#111827',
+                        'text-secondary': '#6b7280',
+                        'background-secondary': '#f9fafb',
+                        'border-light': '#e5e7eb'
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif']
+                    },
+                    maxWidth: {
+                        'mobile': '448px'
+                    }
+                }
+            }
+        };
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        .floating-currency {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        .floating-currency:nth-child(2) {
+            animation-delay: -2s;
+        }
+        
+        .floating-currency:nth-child(3) {
+            animation-delay: -4s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        
+        .gradient-gold {
+            background: linear-gradient(135deg, #C79901 0%, #f59e0b 100%);
+        }
+        
+        .gradient-dark {
+            background: linear-gradient(135deg, #111827 0%, #1f2937 100%);
+        }
+        
+        .card-shadow {
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+        }
+        
+        .hero-phone {
+            transform: perspective(1000px) rotateY(-15deg) rotateX(5deg);
+        }
+        
+        .stats-card {
+            background: linear-gradient(135deg, rgba(199, 153, 1, 0.1) 0%, rgba(245, 158, 11, 0.1) 100%);
+            border: 1px solid rgba(199, 153, 1, 0.2);
+        }
+        
+        .loading-spinner {
+            border: 4px solid #f3f4f6;
+            border-top: 4px solid #C79901;
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+
+<body class="bg-white font-inter">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-mobile mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-gradient-gold rounded-xl flex items-center justify-center">
+                        <i class="fas fa-crosshairs text-white text-lg"></i>
+                    </div>
+                    <span class="text-xl font-semibold text-text-primary">GoldSniper</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <select class="text-sm text-text-secondary bg-transparent border-none">
+                        <option>🇬🇧 EN</option>
+                        <option>🇪🇸 ES</option>
+                        <option>🇨🇳 CN</option>
+                        <option>🇸🇦 AR</option>
+                        <option>🇩🇪 DE</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 1: Hero Banner -->
+    <section class="relative gradient-dark text-white overflow-hidden">
+        <!-- Floating Currency Icons -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="floating-currency absolute top-20 left-8 text-2xl opacity-30">💰</div>
+            <div class="floating-currency absolute top-32 right-12 text-xl opacity-40">💎</div>
+            <div class="floating-currency absolute top-48 left-16 text-lg opacity-35">🔥</div>
+            <div class="floating-currency absolute bottom-20 right-8 text-2xl opacity-30">📈</div>
+            <div class="floating-currency absolute bottom-32 left-12 text-xl opacity-40">⚡</div>
+        </div>
+        
+        <div class="max-w-mobile mx-auto px-4 py-16 relative z-10">
+            <div class="text-center mb-12">
+                <h1 class="text-2xl font-semibold mb-4 leading-tight">
+                    The #1 Gold Sniper app in the world 🔥
+                </h1>
+                <p class="text-gray-300 text-base mb-8">
+                    We send strong Gold signals for you to copy. Join now to receive signal insights for XAUUSD trading.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="space-y-3">
+                    <button class="w-full bg-brand-orange hover:bg-amber-accent text-white font-medium py-3 px-6 rounded-xl transition-colors flex items-center justify-center space-x-2">
+                        <i class="fab fa-android text-lg"></i>
+                        <span>Download for Android</span>
+                    </button>
+                    <button class="w-full bg-white text-text-primary hover:bg-gray-100 font-medium py-3 px-6 rounded-xl transition-colors flex items-center justify-center space-x-2">
+                        <i class="fab fa-apple text-lg"></i>
+                        <span>Download for iOS</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Phone Mockup -->
+            <div class="relative flex justify-center">
+                <div class="hero-phone">
+                    <!-- Modern smartphone mockup showing app interface -->
+                    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=800" alt="GoldSniper app interface showing gold trading signals" class="w-64 h-auto rounded-3xl shadow-2xl" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: Partner Logos -->
+    <section class="gradient-gold py-12">
+        <div class="max-w-mobile mx-auto px-4">
+            <div class="text-center mb-8">
+                <p class="text-white text-base font-medium">
+                    We are featured on popular signal partners like
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-3 gap-6 items-center justify-items-center">
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4 w-full flex items-center justify-center">
+                    <span class="text-white font-semibold text-sm">TradingView</span>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4 w-full flex items-center justify-center">
+                    <span class="text-white font-semibold text-sm">Forex.com</span>
+                </div>
+                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4 w-full flex items-center justify-center">
+                    <span class="text-white font-semibold text-sm">MyFXBook</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Why Choose Us -->
+    <section class="bg-background-secondary py-16">
+        <div class="max-w-mobile mx-auto px-4">
+            <div class="space-y-6">
+                <div class="bg-white rounded-2xl p-6 card-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-green-success/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-shield-alt text-green-success text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-text-primary mb-2">Reliable Signals</h3>
+                            <p class="text-text-secondary">Professional analysis from experienced gold traders with proven track records.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 card-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-brand-orange/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-bolt text-brand-orange text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-text-primary mb-2">Instant Alerts</h3>
+                            <p class="text-text-secondary">Real-time push notifications delivered instantly to your mobile device.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-6 card-shadow">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-red-loss/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-chart-line text-red-loss text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-text-primary mb-2">Performance Tracking</h3>
+                            <p class="text-text-secondary">Detailed analytics and performance metrics to track your trading success.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Signal Performance Stats -->
+    <section class="bg-white py-16">
+        <div class="max-w-mobile mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-semibold text-text-primary mb-4">
+                    93% profitable trades our daily XAUUSD signals! 📊
+                </h2>
+                <p class="text-text-secondary mb-8">
+                    Our users rely on strong signal precision and fast execution to secure gains in the Gold market.
+                </p>
+                
+                <!-- Performance Statistics -->
+                <div class="grid grid-cols-2 gap-4 mb-8">
+                    <div class="stats-card rounded-2xl p-6 text-center">
+                        <div class="text-2xl font-semibold text-text-primary mb-1">93%</div>
+                        <div class="text-sm text-text-secondary">😍 Win Rate</div>
+                    </div>
+                    <div class="stats-card rounded-2xl p-6 text-center">
+                        <div class="text-2xl font-semibold text-text-primary mb-1">75</div>
+                        <div class="text-sm text-text-secondary">📊 Total Trades</div>
+                    </div>
+                    <div class="stats-card rounded-2xl p-6 text-center">
+                        <div class="text-2xl font-semibold text-text-primary mb-1">+221.9</div>
+                        <div class="text-sm text-text-secondary">🔨 Average Pips</div>
+                    </div>
+                    <div class="stats-card rounded-2xl p-6 text-center">
+                        <div class="text-2xl font-semibold text-text-primary mb-1">24/7</div>
+                        <div class="text-sm text-text-secondary">📅 Market Coverage</div>
+                    </div>
+                </div>
+                
+                <button class="bg-brand-orange hover:bg-amber-accent text-white font-medium py-3 px-8 rounded-xl transition-colors">
+                    Our Signals App
+                </button>
+            </div>
+            
+            <!-- Chart Visual -->
+            <div class="relative">
+                <!-- Professional trading chart showing gold price movements -->
+                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="Gold trading chart showing profitable signals and market trends" class="w-full h-48 object-cover rounded-2xl" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Trader Expertise -->
+    <section class="gradient-dark text-white py-16">
+        <div class="max-w-mobile mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-semibold mb-4">
+                    We are safe & precise traders 💪
+                </h2>
+                <p class="text-gray-300 mb-8">
+                    With 5+ years in forex & 1000+ XAUUSD trades per month, we ensure only the sharpest entries and alerts.
+                </p>
+                
+                <button class="bg-brand-orange hover:bg-amber-accent text-white font-medium py-3 px-8 rounded-xl transition-colors mb-8">
+                    Our Results
+                </button>
+            </div>
+            
+            <!-- Gold Bars Visual -->
+            <div class="relative">
+                <!-- Luxury gold bars and trading floor imagery -->
+                <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" alt="Professional gold trading floor with experienced traders analyzing markets" class="w-full h-48 object-cover rounded-2xl opacity-80" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: How It Works -->
+    <section class="bg-background-secondary py-16">
+        <div class="max-w-mobile mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-semibold text-text-primary mb-8">
+                    It's simple to get started 🚀
+                </h2>
+                
+                <!-- 3 Steps -->
+                <div class="space-y-8">
+                    <div class="bg-white rounded-2xl p-6 card-shadow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-brand-orange text-white rounded-xl flex items-center justify-center font-semibold">1</div>
+                            <h3 class="text-lg font-semibold text-text-primary">Download the app</h3>
+                        </div>
+                        <p class="text-text-secondary text-left">Get GoldSniper from your app store and create your account in seconds.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-6 card-shadow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-brand-orange text-white rounded-xl flex items-center justify-center font-semibold">2</div>
+                            <h3 class="text-lg font-semibold text-text-primary">Join our Telegram group</h3>
+                        </div>
+                        <p class="text-text-secondary text-left">Connect with our community of successful traders and get exclusive insights.</p>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl p-6 card-shadow">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-brand-orange text-white rounded-xl flex items-center justify-center font-semibold">3</div>
+                            <h3 class="text-lg font-semibold text-text-primary">Start copying signals</h3>
+                        </div>
+                        <p class="text-text-secondary text-left">Follow our precise entry and exit points to maximize your trading profits.</p>
+                    </div>
+                </div>
+                
+                <div class="mt-8 p-4 bg-green-success/10 rounded-2xl border border-green-success/20">
+                    <p class="text-text-primary font-medium">
+                        Join us today and start making 20% monthly. 💰
+                    </p>
+                </div>
+                
+                <button class="mt-6 bg-brand-orange hover:bg-amber-accent text-white font-medium py-3 px-8 rounded-xl transition-colors">
+                    Our signals app
+                </button>
+            </div>
+            
+            <!-- Performance Table Screenshot -->
+            <div class="mt-8">
+                <!-- Mobile app screenshot showing performance metrics -->
+                <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" alt="GoldSniper app performance dashboard showing profitable trades and statistics" class="w-full h-auto rounded-2xl shadow-lg" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Pricing -->
+    <section class="bg-white py-16">
+        <div class="max-w-mobile mx-auto px-4">
+            <div class="text-center">
+                <h2 class="text-2xl font-semibold text-text-primary mb-8">
+                    No hidden charges
+                </h2>
+                
+                <!-- Pricing Circle -->
+                <div class="relative mb-12">
+                    <div class="w-48 h-48 mx-auto gradient-gold rounded-full flex items-center justify-center">
+                        <div class="text-center text-white">
+                            <div class="text-3xl font-bold mb-2">£39</div>
+                            <div class="text-lg">Monthly</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Download Buttons -->
+                <div class="space-y-3">
+                    <button class="w-full bg-brand-orange hover:bg-amber-accent text-white font-medium py-3 px-6 rounded-xl transition-colors flex items-center justify-center space-x-2">
+                        <i class="fab fa-android text-lg"></i>
+                        <span>Download for Android</span>
+                    </button>
+                    <button class="w-full bg-gray-900 hover:bg-black text-white font-medium py-3 px-6 rounded-xl transition-colors flex items-center justify-center space-x-2">
+                        <i class="fab fa-apple text-lg"></i>
+                        <span>Download for iOS</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: Trading Insights -->
+    <section class="bg-background-secondary py-16">
+        <div class="max-w-mobile mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl font-semibold text-text-primary mb-8">
+                    Our trading insights
+                </h2>
+                
+                <div class="space-y-6">
+                    <div class="bg-white rounded-2xl overflow-hidden card-shadow">
+                        <!-- Financial market analysis with gold focus -->
+                        <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300" alt="Smart dollar entries analysis for gold trading with market indicators" class="w-full h-32 object-cover" />
+                        <div class="p-4">
+                            <h3 class="font-semibold text-text-primary mb-2">Smart Dollar Entries</h3>
+                            <p class="text-text-secondary text-sm">Learn optimal entry points for XAUUSD trades based on USD strength analysis.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl overflow-hidden card-shadow">
+                        <!-- Gold market trends and patterns -->
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300" alt="Gold market trends analysis showing price patterns and trading opportunities" class="w-full h-32 object-cover" />
+                        <div class="p-4">
+                            <h3 class="font-semibold text-text-primary mb-2">Gold Market Trends</h3>
+                            <p class="text-text-secondary text-sm">Understand current market patterns and upcoming opportunities in gold trading.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl overflow-hidden card-shadow">
+                        <!-- Risk management strategies -->
+                        <img src="https://images.unsplash.com/photo-1640340434855-6084b1f4901c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=300" alt="Risk management strategies for gold trading with professional trader tools" class="w-full h-32 object-cover" />
+                        <div class="p-4">
+                            <h3 class="font-semibold text-text-primary mb-2">Risk Management</h3>
+                            <p class="text-text-secondary text-sm">Master the art of position sizing and stop-loss placement for consistent profits.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="mt-8 bg-brand-orange hover:bg-amber-accent text-white font-medium py-3 px-8 rounded-xl transition-colors">
+                    View more insights
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: Final CTA -->
+    <section class="gradient-gold py-16">
+        <div class="max-w-mobile mx-auto px-4">
+            <div class="text-center text-white">
+                <h2 class="text-2xl font-semibold mb-8">
+                    Ready to join? 🎯
+                </h2>
+                
+                <div class="space-y-3">
+                    <button class="w-full bg-white text-text-primary hover:bg-gray-100 font-medium py-3 px-6 rounded-xl transition-colors flex items-center justify-center space-x-2">
+                        <i class="fab fa-android text-lg"></i>
+                        <span>Download for Android</span>
+                    </button>
+                    <button class="w-full bg-gray-900 hover:bg-black text-white font-medium py-3 px-6 rounded-xl transition-colors flex items-center justify-center space-x-2">
+                        <i class="fab fa-apple text-lg"></i>
+                        <span>Download for iOS</span>
+                    </button>
+                </div>
+                
+                <div class="mt-8 flex justify-center">
+                    <div class="w-16 h-16 bg-white/20 rounded-2xl flex items-center justify-center">
+                        <i class="fas fa-coins text-2xl text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 10: Footer -->
+    <footer class="gradient-dark text-white py-12">
+        <div class="max-w-mobile mx-auto px-4">
+            <div class="grid grid-cols-2 gap-8 mb-8">
+                <div>
+                    <h3 class="font-semibold mb-4">Navigation</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Features</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="font-semibold mb-4">Legal</h3>
+                    <ul class="space-y-2 text-sm text-gray-300">
+                        <li><a href="#" class="hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Terms & Conditions</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Risk Disclosure</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- App Store Badges -->
+            <div class="space-y-3 mb-8">
+                <button class="w-full bg-brand-orange hover:bg-amber-accent text-white font-medium py-2 px-6 rounded-lg transition-colors flex items-center justify-center space-x-2">
+                    <i class="fab fa-android"></i>
+                    <span class="text-sm">Get it on Google Play</span>
+                </button>
+                <button class="w-full bg-white text-text-primary hover:bg-gray-100 font-medium py-2 px-6 rounded-lg transition-colors flex items-center justify-center space-x-2">
+                    <i class="fab fa-apple"></i>
+                    <span class="text-sm">Download on App Store</span>
+                </button>
+            </div>
+            
+            <!-- Social Icons -->
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-telegram text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                    <i class="fab fa-facebook text-xl"></i>
+                </a>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="text-center text-sm text-gray-400 border-t border-gray-700 pt-6">
+                <p>&copy; 2024 GoldSniper. All rights reserved.</p>
+                <p class="mt-2">Trading involves risk. Past performance does not guarantee future results.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // TODO: Implement business logic, API calls, or state management
+        
+        // Simple interaction enhancements
+        (function() {
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Loading state simulation for buttons
+            document.querySelectorAll('button').forEach(button => {
+                button.addEventListener('click', function() {
+                    if (this.textContent.includes('Download')) {
+                        const originalText = this.innerHTML;
+                        this.innerHTML = '<div class="loading-spinner mr-2"></div>Loading...';
+                        this.disabled = true;
+                        
+                        setTimeout(() => {
+                            this.innerHTML = originalText;
+                            this.disabled = false;
+                        }, 2000);
+                    }
+                });
+            });
+            
+            // Intersection Observer for animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+            
+            // Observe elements for fade-in animation
+            document.querySelectorAll('.card-shadow, .stats-card').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>
