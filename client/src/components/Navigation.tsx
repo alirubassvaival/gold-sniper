@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { Crosshair, Menu, X } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'wouter';
 import LanguageSwitcher from './LanguageSwitcher';
+import { useLanguageFromUrl } from './LanguageRouter';
 
 interface NavigationProps {
   currentPage?: 'home' | 'features' | 'results' | 'pricing' | 'insights';
@@ -10,6 +12,21 @@ interface NavigationProps {
 export default function Navigation({ currentPage = 'home' }: NavigationProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { t } = useTranslation();
+  const [location, setLocation] = useLocation();
+  const currentLang = useLanguageFromUrl();
+
+  const createLanguagePath = (path: string) => {
+    return `/${currentLang}${path}`;
+  };
+
+  const isActivePage = (page: string) => {
+    const currentPath = location;
+    if (page === 'home') {
+      return currentPath === `/${currentLang}` || currentPath === '/';
+    }
+    return currentPath === `/${currentLang}/${page}` || currentPath === `/${page}`;
+  };
+
   return (
     <header className="bg-black/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-800">
       <div className="max-w-6xl mx-auto px-6 py-4">
@@ -23,32 +40,32 @@ export default function Navigation({ currentPage = 'home' }: NavigationProps) {
           <div className="flex items-center space-x-6">
             <nav className="hidden md:flex items-center space-x-6">
               <a 
-                href="/" 
-                className={`transition-colors ${currentPage === 'home' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
+                href={createLanguagePath('')}
+                className={`transition-colors ${isActivePage('home') ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
               >
                 {t('nav.home')}
               </a>
               <a 
-                href="/signals-app" 
-                className={`transition-colors ${currentPage === 'features' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
+                href={createLanguagePath('/signals-app')}
+                className={`transition-colors ${isActivePage('signals-app') ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
               >
                 {t('nav.signalsApp')}
               </a>
               <a 
-                href="#results" 
-                className={`transition-colors ${currentPage === 'results' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
+                href={createLanguagePath('/results')}
+                className={`transition-colors ${isActivePage('results') ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
               >
                 {t('nav.performance')}
               </a>
               <a 
-                href="#pricing" 
-                className={`transition-colors ${currentPage === 'pricing' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
+                href={createLanguagePath('/pricing')}
+                className={`transition-colors ${isActivePage('pricing') ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
               >
                 {t('nav.pricing')}
               </a>
               <a 
-                href="#insights" 
-                className={`transition-colors ${currentPage === 'insights' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
+                href={createLanguagePath('/support')}
+                className={`transition-colors ${isActivePage('support') ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
               >
                 {t('nav.support')}
               </a>
@@ -74,36 +91,36 @@ export default function Navigation({ currentPage = 'home' }: NavigationProps) {
           <div className="md:hidden bg-gray-900 border-t border-gray-800">
             <div className="px-6 py-4 space-y-4">
               <a 
-                href="/" 
-                className={`block text-lg transition-colors ${currentPage === 'home' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
+                href={createLanguagePath('')}
+                className={`block text-lg transition-colors ${isActivePage('home') ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t('nav.home')}
               </a>
               <a 
-                href="/signals-app" 
-                className={`block text-lg transition-colors ${currentPage === 'features' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
+                href={createLanguagePath('/signals-app')}
+                className={`block text-lg transition-colors ${isActivePage('signals-app') ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t('nav.signalsApp')}
               </a>
               <a 
-                href="#results" 
-                className={`block text-lg transition-colors ${currentPage === 'results' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
+                href={createLanguagePath('/results')}
+                className={`block text-lg transition-colors ${isActivePage('results') ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t('nav.performance')}
               </a>
               <a 
-                href="#pricing" 
-                className={`block text-lg transition-colors ${currentPage === 'pricing' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
+                href={createLanguagePath('/pricing')}
+                className={`block text-lg transition-colors ${isActivePage('pricing') ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t('nav.pricing')}
               </a>
               <a 
-                href="#insights" 
-                className={`block text-lg transition-colors ${currentPage === 'insights' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
+                href={createLanguagePath('/support')}
+                className={`block text-lg transition-colors ${isActivePage('support') ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t('nav.support')}

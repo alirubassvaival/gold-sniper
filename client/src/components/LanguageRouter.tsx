@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useLocation, useRoute } from 'wouter';
+import { useLocation } from 'wouter';
 import { useTranslation } from 'react-i18next';
 import { supportedLanguages, defaultLanguage } from '../i18n';
 
@@ -13,7 +13,7 @@ export default function LanguageRouter({ children }: LanguageRouterProps) {
 
   useEffect(() => {
     // Check if current URL has a language prefix
-    const path = window.location.pathname;
+    const path = location;
     const langMatch = path.match(/^\/([a-z]{2})(\/|$)/);
     
     if (langMatch) {
@@ -28,10 +28,13 @@ export default function LanguageRouter({ children }: LanguageRouterProps) {
         const newPath = path.replace(/^\/[a-z]{2}/, '');
         setLocation(`/${defaultLanguage}${newPath}`);
       }
-    } else {
+    } else if (path !== '/') {
       // No language in URL, redirect to default language
       const newPath = path === '/' ? '' : path;
       setLocation(`/${defaultLanguage}${newPath}`);
+    } else {
+      // Root path, redirect to default language
+      setLocation(`/${defaultLanguage}`);
     }
   }, [location, i18n, setLocation]);
 
@@ -40,8 +43,8 @@ export default function LanguageRouter({ children }: LanguageRouterProps) {
 
 // Hook to get current language from URL
 export function useLanguageFromUrl(): string {
-  const path = window.location.pathname;
-  const langMatch = path.match(/^\/([a-z]{2})(\/|$)/);
+  const [location] = useLocation();
+  const langMatch = location.match(/^\/([a-z]{2})(\/|$)/);
   return langMatch ? langMatch[1] : defaultLanguage;
 }
 
@@ -59,7 +62,7 @@ export function useLanguageChange() {
     i18n.changeLanguage(newLang);
 
     // Update URL
-    const currentPath = window.location.pathname;
+    const currentPath = location;
     const pathWithoutLang = currentPath.replace(/^\/[a-z]{2}/, '');
     const newPath = `/${newLang}${pathWithoutLang}`;
     

@@ -15,7 +15,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Language-specific route handling for SEO
   app.get('/sitemap.xml', (req, res) => {
     const baseUrl = 'https://goldsniper.replit.app';
-    const pages = ['', '/signals-app'];
+    const pages = ['', '/signals-app', '/results', '/pricing', '/support', '/performance'];
     
     let sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n';
     sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';

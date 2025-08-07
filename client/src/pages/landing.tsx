@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Shield, Zap, TrendingUp, Crosshair, Download, ExternalLink, Star, Globe, Clock, Award } from 'lucide-react';
 import { SiApple, SiGoogleplay } from 'react-icons/si';
 import { useTranslation } from 'react-i18next';
+import { useLocation } from 'wouter';
 import Navigation from '../components/Navigation';
 import SEOHead from '../components/SEOHead';
 import FAQ from '../components/FAQ';
@@ -11,6 +12,7 @@ import FAQ from '../components/FAQ';
 export default function Landing() {
   const [isLoading, setIsLoading] = useState<string | null>(null);
   const { t } = useTranslation();
+  const [location] = useLocation();
 
   const handleDownloadClick = (platform: string) => {
     setIsLoading(platform);
@@ -41,6 +43,44 @@ export default function Landing() {
 
     return () => observer.disconnect();
   }, []);
+
+  // Handle section scrolling based on URL
+  useEffect(() => {
+    const path = location;
+    const sectionMatch = path.match(/\/([^\/]+)$/);
+    
+    if (sectionMatch) {
+      const section = sectionMatch[1];
+      let targetId = '';
+      
+      // Map route sections to section IDs
+      switch (section) {
+        case 'results':
+        case 'performance':
+          targetId = 'results';
+          break;
+        case 'pricing':
+          targetId = 'pricing';
+          break;
+        case 'support':
+          targetId = 'insights';
+          break;
+        default:
+          return;
+      }
+      
+      // Scroll to the target section after a short delay to ensure the page is loaded
+      setTimeout(() => {
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      }, 100);
+    }
+  }, [location]);
 
   return (
     <div className="bg-black text-white font-inter">

@@ -21,9 +21,27 @@ function Router() {
         <Route key={`${lang}-signals`} path={`/${lang}/signals-app`} component={SignalsApp} />
       ))}
       
+      {/* Section routes for each language */}
+      {Object.keys(supportedLanguages).map(lang => (
+        <Route key={`${lang}-results`} path={`/${lang}/results`} component={Landing} />
+      ))}
+      {Object.keys(supportedLanguages).map(lang => (
+        <Route key={`${lang}-pricing`} path={`/${lang}/pricing`} component={Landing} />
+      ))}
+      {Object.keys(supportedLanguages).map(lang => (
+        <Route key={`${lang}-support`} path={`/${lang}/support`} component={Landing} />
+      ))}
+      {Object.keys(supportedLanguages).map(lang => (
+        <Route key={`${lang}-performance`} path={`/${lang}/performance`} component={Landing} />
+      ))}
+      
       {/* Fallback routes for backward compatibility */}
       <Route path="/" component={Landing} />
       <Route path="/signals-app" component={SignalsApp} />
+      <Route path="/results" component={Landing} />
+      <Route path="/pricing" component={Landing} />
+      <Route path="/support" component={Landing} />
+      <Route path="/performance" component={Landing} />
       <Route component={NotFound} />
     </Switch>
   );
