@@ -32,9 +32,9 @@ export default function SignalsApp() {
       <Navigation currentPage="features" />
 
       {/* Hero Section */}
-      <section className="relative bg-black py-12 md:py-20 overflow-hidden">
+      <section className="relative bg-black py-8 md:py-16 overflow-hidden">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-6 md:mb-12">
+          <div className="text-center mb-6 md:mb-8">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">
               {t('hero.title')}
               <br />
@@ -96,9 +96,9 @@ export default function SignalsApp() {
       </section>
 
       {/* App Demo Video Section */}
-      <section className="bg-gray-900 py-12 md:py-20">
+      <section className="bg-gray-900 py-8 md:py-16">
         <div className="max-w-4xl mx-auto px-6">
-          <div className="text-center mb-4 md:mb-8">
+          <div className="text-center mb-4 md:mb-6">
             <h2 className="text-3xl font-bold text-white mb-3">See GoldSniper in Action</h2>
             <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-2 md:mb-4">
               Watch how professional traders use our mobile app to receive and execute high-precision gold trading signals.
@@ -106,7 +106,7 @@ export default function SignalsApp() {
           </div>
           
           <div className="relative bg-black rounded-2xl p-4">
-            <div className="aspect-video rounded-xl overflow-hidden mb-6">
+            <div className="aspect-video rounded-xl overflow-hidden mb-4">
               <iframe
                 src="https://www.youtube.com/embed/lLdbwqSMRB0"
                 title="GoldSniper Trading Signals App Demo"
@@ -122,16 +122,16 @@ export default function SignalsApp() {
       </section>
 
       {/* Key Benefits Section */}
-      <section id="features" className="bg-black py-12 md:py-20">
+      <section id="features" className="bg-black py-8 md:py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-6 md:mb-10">
+          <div className="text-center mb-6 md:mb-8">
             <h2 className="text-3xl font-bold text-white mb-3">Why Choose Gold Sniper?</h2>
             <p className="text-lg text-gray-400 max-w-3xl mx-auto mb-2 md:mb-4">
               We give real-time signals on a daily basis and always focus on the best options rather than overtrading the bad ones. Our free gold signals will allow you to earn in the most efficient and convenient ways possible.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-10">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-6 mb-6 md:mb-8">
             <Card className="fade-in bg-gray-900 border-[color:var(--brand-orange)]/30 hover:border-[color:var(--brand-orange)] transition-colors">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-[color:var(--brand-orange)] rounded-xl flex items-center justify-center mb-4">
@@ -173,33 +173,23 @@ export default function SignalsApp() {
             </Card>
           </div>
           
-          <div className="text-center bg-gradient-to-r from-[color:var(--brand-orange)] to-[color:var(--amber-accent)] rounded-2xl p-8">
-            <h3 className="text-2xl font-bold text-black mb-6">All of the most latest and popular features of Gold Sniper are now accessible on your mobile device!</h3>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button className="bg-black text-white hover:bg-gray-900 font-bold py-4 px-8 rounded-xl transition-all duration-200 flex items-center justify-center space-x-3 text-lg shadow-xl">
-                <SiApple className="w-6 h-6" />
-                <span>Download for iPhone</span>
-              </Button>
-              <Button className="bg-black text-white hover:bg-gray-900 font-bold py-4 px-8 rounded-xl transition-all duration-200 flex items-center justify-center space-x-3 text-lg shadow-xl">
-                <SiGoogleplay className="w-6 h-6" />
-                <span>Download for Android</span>
-              </Button>
-            </div>
+          <div className="text-center bg-gradient-to-r from-[color:var(--brand-orange)] to-[color:var(--amber-accent)] rounded-2xl p-6">
+            <h3 className="text-2xl font-bold text-black mb-4">All of the most latest and popular features of Gold Sniper are now accessible on your mobile device!</h3>
           </div>
         </div>
       </section>
 
       {/* How Signals Work */}
-      <section className="bg-gray-900 py-12 md:py-20">
+      <section className="bg-gray-900 py-8 md:py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-6 md:mb-10">
+          <div className="text-center mb-6 md:mb-8">
             <h2 className="text-3xl font-bold text-white mb-3">How do Gold Sniper Signals Work? 🥇</h2>
             <p className="text-lg text-gray-400 max-w-4xl mx-auto mb-2 md:mb-4">
               Our analysts scrutinize every component to guarantee that you have a simple-to-use gold signals system for a high-quality trading experience. If you follow our live trading ideas, you can quickly duplicate our live trades on your trading account.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-1 lg:grid-cols-5 gap-4 md:gap-6 mb-4 md:mb-8">
+          <div className="grid md:grid-cols-1 lg:grid-cols-5 gap-4 md:gap-6 mb-4 md:mb-6">
             <div className="text-center fade-in">
               <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-xl">1</div>
               <p className="text-gray-300 text-lg">Our analyst identify a market opportunity that might result in a profitable trade</p>
@@ -229,16 +219,16 @@ export default function SignalsApp() {
       </section>
 
       {/* How to Read Signals */}
-      <section className="bg-black py-12 md:py-20">
+      <section className="bg-black py-8 md:py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-8 md:mb-16">
+          <div className="text-center mb-6 md:mb-8">
             <h2 className="text-4xl font-bold text-white mb-4">How to Read Gold Sniper's Gold Signals 🥇</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto">
               In our Gold signals terminal, you will find the following information:
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mb-6 md:mb-8">
             <Card className="bg-gray-900 border-[color:var(--brand-orange)]/30">
               <CardContent className="p-6">
                 <div className="w-12 h-12 bg-blue-600 rounded-xl flex items-center justify-center mb-4">
@@ -304,7 +294,7 @@ export default function SignalsApp() {
             </Card>
           </div>
           
-          <div className="bg-gradient-to-r from-red-900/50 to-orange-900/50 rounded-2xl p-8 border border-red-500/30">
+          <div className="bg-gradient-to-r from-red-900/50 to-orange-900/50 rounded-2xl p-6 border border-red-500/30">
             <h3 className="text-2xl font-bold text-white mb-4 text-center">Pay Attention! 🥇</h3>
             <p className="text-gray-300 text-lg mb-6 text-center">There are 3 different ways for XAUUSD signals to get closed:</p>
             <div className="grid md:grid-cols-3 gap-6">
@@ -335,16 +325,16 @@ export default function SignalsApp() {
       </section>
 
       {/* Gold Trading Education */}
-      <section className="bg-gray-900 py-12 md:py-20">
+      <section className="bg-gray-900 py-8 md:py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-8 md:mb-16">
+          <div className="text-center mb-6 md:mb-8">
             <h2 className="text-4xl font-bold text-white mb-4">What is Gold Trading According to Gold Sniper? 🥇</h2>
             <p className="text-xl text-gray-400 max-w-4xl mx-auto">
               You should know that gold is a fossil and non-renewable precious metal. The reserves of open mines are drained year after year, resulting in consistent growth in the value of this asset over time.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-6 md:gap-12 mb-8 md:mb-16">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12 mb-6 md:mb-8">
             <Card className="bg-black border-[color:var(--brand-orange)]/30">
               <CardContent className="p-8">
                 <div className="w-16 h-16 bg-[color:var(--brand-orange)] rounded-xl flex items-center justify-center mb-6">
@@ -366,7 +356,7 @@ export default function SignalsApp() {
             </Card>
           </div>
           
-          <div className="bg-gradient-to-r from-[color:var(--brand-orange)] to-[color:var(--amber-accent)] rounded-2xl p-8 text-center">
+          <div className="bg-gradient-to-r from-[color:var(--brand-orange)] to-[color:var(--amber-accent)] rounded-2xl p-6 text-center">
             <h3 className="text-2xl font-bold text-black mb-4">Trading Success Metrics</h3>
             <p className="text-black/80 text-lg mb-6">A steady monthly income of 10-20% is a strong financial accomplishment for a gold trader. You will only need to intraday trade to attain such an outcome in gold trading.</p>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
@@ -388,9 +378,9 @@ export default function SignalsApp() {
       </section>
 
       {/* Trading Tips Section */}
-      <section className="bg-black py-12 md:py-20">
+      <section className="bg-black py-8 md:py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-8 md:mb-16">
+          <div className="text-center mb-6 md:mb-8">
             <h2 className="text-4xl font-bold text-white mb-4">Our Top 7 Tips for Trading Gold Successfully 🥇</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-2 md:mb-4">
               As you can see, following our gold currency signals is straightforward. When a signal appears on our signals app or you receive an alert on your phone, open a trade at the spot price and use the predetermined stop loss and take profit settings.
@@ -458,9 +448,9 @@ export default function SignalsApp() {
       </section>
 
       {/* Market Factors */}
-      <section className="bg-gray-900 py-12 md:py-20">
+      <section className="bg-gray-900 py-8 md:py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-8 md:mb-16">
+          <div className="text-center mb-6 md:mb-8">
             <h2 className="text-4xl font-bold text-white mb-4">Factors That Impact Gold Prices 🥇</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-2 md:mb-4">
               This is where Gold Sniper can help you know all the different factors affecting gold and find you the best trading opportunities.
@@ -496,7 +486,7 @@ export default function SignalsApp() {
       </section>
 
       {/* App Interface Preview */}
-      <section className="bg-black py-20">
+      <section className="bg-black py-8 md:py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="fade-in">
@@ -546,17 +536,17 @@ export default function SignalsApp() {
       </section>
 
       {/* Premium Section */}
-      <section className="bg-black py-12 md:py-20">
+      <section className="bg-black py-8 md:py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-8 md:mb-16">
+          <div className="text-center mb-6 md:mb-8">
             <h2 className="text-4xl font-bold text-white mb-6">Go Premium 🥇</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-2 md:mb-4">
               Our mobile app will not only provide live updates on gold signals for Premium users, but it will also provide you with these benefits.
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 gap-4 md:gap-8 mb-8 md:mb-16">
-            <div className="bg-gray-900 rounded-2xl p-8 border border-[color:var(--brand-orange)]/30">
+          <div className="grid md:grid-cols-2 gap-4 md:gap-8 mb-6 md:mb-8">
+            <div className="bg-gray-900 rounded-2xl p-6 border border-[color:var(--brand-orange)]/30">
               <h3 className="text-2xl font-bold text-white mb-6">Premium Benefits</h3>
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
@@ -586,18 +576,18 @@ export default function SignalsApp() {
               </div>
             </div>
             
-            <div className="bg-gradient-to-br from-[color:var(--brand-orange)] to-[color:var(--amber-accent)] rounded-2xl p-8 text-center">
+            <div className="bg-gradient-to-br from-[color:var(--brand-orange)] to-[color:var(--amber-accent)] rounded-2xl p-6 text-center">
               <h3 className="text-2xl font-bold text-black mb-4">Expert Team</h3>
               <p className="text-black/80 text-lg mb-6">
                 We are a team of experienced traders and analysts. We know all there is to know about financial markets as we have over ten years of expertise. We developed Gold Sniper because we know how difficult it can be to trade and remain calm. We are here to assist you in improving your approach and achieving amazing results on your accounts.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button className="bg-black text-white hover:bg-gray-900 font-bold py-4 px-8 rounded-xl transition-all duration-200 flex items-center justify-center space-x-3 text-lg shadow-xl">
-                  <SiApple className="w-6 h-6" />
+              <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                <Button className="bg-black text-white hover:bg-gray-900 font-bold py-3 px-6 rounded-xl transition-all duration-200 flex items-center justify-center space-x-2 text-sm shadow-xl">
+                  <SiApple className="w-5 h-5" />
                   <span>Download for iPhone</span>
                 </Button>
-                <Button className="bg-black text-white hover:bg-gray-900 font-bold py-4 px-8 rounded-xl transition-all duration-200 flex items-center justify-center space-x-3 text-lg shadow-xl">
-                  <SiGoogleplay className="w-6 h-6" />
+                <Button className="bg-black text-white hover:bg-gray-900 font-bold py-3 px-6 rounded-xl transition-all duration-200 flex items-center justify-center space-x-2 text-sm shadow-xl">
+                  <SiGoogleplay className="w-5 h-5" />
                   <span>Download for Android</span>
                 </Button>
               </div>
@@ -607,7 +597,7 @@ export default function SignalsApp() {
       </section>
 
       {/* Performance Stats */}
-      <section className="bg-gradient-to-r from-[color:var(--brand-orange)] to-[color:var(--amber-accent)] py-20">
+      <section className="bg-gradient-to-r from-[color:var(--brand-orange)] to-[color:var(--amber-accent)] py-8 md:py-16">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative fade-in flex justify-center">
@@ -657,9 +647,9 @@ export default function SignalsApp() {
       </section>
 
       {/* Comprehensive Gold Trading Guide - SEO Content */}
-      <section className="bg-gray-900 py-12 md:py-20">
+      <section className="bg-gray-900 py-8 md:py-16">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-8 md:mb-16">
+          <div className="text-center mb-6 md:mb-8">
             <h2 className="text-4xl font-bold text-white mb-6">Complete Guide to Gold Trading with GoldSniper 📚</h2>
             <p className="text-xl text-gray-400 max-w-3xl mx-auto mb-2 md:mb-4">
               Everything you need to know about trading gold successfully with our professional signals service.
@@ -667,7 +657,7 @@ export default function SignalsApp() {
           </div>
           
           <div className="prose prose-lg prose-invert max-w-none">
-            <div className="bg-black rounded-2xl p-4 md:p-8 mb-4 md:mb-8">
+            <div className="bg-black rounded-2xl p-4 md:p-8 mb-4 md:mb-6">
               <h3 className="text-2xl font-bold text-[color:var(--brand-orange)] mb-4">Up-to-the-minute Gold Signals and Trading 🥇</h3>
               <p className="text-gray-300 text-lg mb-4">
                 Gold signals are extremely time-sensitive, and you must act fast to secure the best pricing. Prices can fluctuate incredibly quickly, so if you receive a Gold signal notification, you should buy or sell straight away. As a result, if your Gold signals are directly linked to your phone, you will be able to execute trades fast.
@@ -677,7 +667,7 @@ export default function SignalsApp() {
               </p>
             </div>
             
-            <div className="bg-black rounded-2xl p-4 md:p-8 mb-4 md:mb-8">
+            <div className="bg-black rounded-2xl p-4 md:p-8 mb-4 md:mb-6">
               <h3 className="text-2xl font-bold text-[color:var(--brand-orange)] mb-4">Understanding Global Gold Signals 🥇</h3>
               <p className="text-gray-300 text-lg mb-4">
                 Gold trading hours are longer than those of practically any other market in the world, allowing you to trade at virtually any time. The FX market, which is used by brokers all around the world, is often available to professionals, amateur traders, and beginners from all over the world. Gold Sniper signals can help you stay updated about what is going on, no matter where you are.
@@ -687,7 +677,7 @@ export default function SignalsApp() {
               </p>
             </div>
             
-            <div className="bg-black rounded-2xl p-4 md:p-8 mb-4 md:mb-8">
+            <div className="bg-black rounded-2xl p-4 md:p-8 mb-4 md:mb-6">
               <h3 className="text-2xl font-bold text-[color:var(--brand-orange)] mb-4">Gold Trading Specifics 🥇</h3>
               <p className="text-gray-300 text-lg mb-4">
                 When dealing with this precious metal on the OTC market, it is critical to remember that one standard lot equals 100 troy ounces. XAU Is a gold symbol in the gold market. Brokers provide traders the chance to profit from the pricing of this asset by transacting on the XAU/USD pair. The graph depicts the price of one ounce of metal in US dollars.
@@ -700,7 +690,7 @@ export default function SignalsApp() {
               </p>
             </div>
             
-            <div className="bg-black rounded-2xl p-4 md:p-8 mb-4 md:mb-8">
+            <div className="bg-black rounded-2xl p-4 md:p-8 mb-4 md:mb-6">
               <h3 className="text-2xl font-bold text-[color:var(--brand-orange)] mb-4">How Does Gold Work with Gold Sniper? 🥇</h3>
               <p className="text-gray-300 text-lg mb-4">
                 In the gold market, gold is basically a currency. It is almost always traded against the US dollar under the symbol XAU/USD. As a result, your approach must monitor changes in the US dollar. A rise in the value of the US dollar might reduce the value of gold. So stay up to date on gold news websites for insights into forthcoming trends and analyses.
@@ -710,7 +700,7 @@ export default function SignalsApp() {
               </p>
             </div>
             
-            <div className="bg-black rounded-2xl p-4 md:p-8 mb-4 md:mb-8">
+            <div className="bg-black rounded-2xl p-4 md:p-8 mb-4 md:mb-6">
               <h3 className="text-2xl font-bold text-[color:var(--brand-orange)] mb-4">How to Start Trading Gold with Gold Sniper 🥇</h3>
               <p className="text-gray-300 text-lg mb-4">
                 Even for individuals with little to no prior expertise or a little amount of money to invest, trading gold with Gold Sniper is the best choice.
@@ -737,38 +727,51 @@ export default function SignalsApp() {
               </p>
             </div>
           </div>
-          
-          <div className="text-center mt-6 md:mt-12">
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Button className="bg-[color:var(--brand-orange)] hover:bg-[color:var(--amber-accent)] text-black font-bold py-4 px-8 rounded-xl transition-all duration-200 flex items-center justify-center space-x-3 text-lg shadow-xl">
-                <SiApple className="w-6 h-6" />
-                <span>Download for iPhone</span>
-              </Button>
-              <Button className="bg-[color:var(--brand-orange)] hover:bg-[color:var(--amber-accent)] text-black font-bold py-4 px-8 rounded-xl transition-all duration-200 flex items-center justify-center space-x-3 text-lg shadow-xl">
-                <SiGoogleplay className="w-6 h-6" />
-                <span>Download for Android</span>
-              </Button>
-            </div>
-          </div>
         </div>
       </section>
 
       {/* Download CTA */}
-      <section className="bg-black py-12 md:py-20">
+      <section className="bg-black py-8 md:py-16">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <h2 className="text-4xl font-bold text-white mb-6">Download the Gold Sniper mobile app now! 🥇</h2>
-          <p className="text-xl text-gray-300 mb-2 md:mb-4 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-300 mb-6 max-w-3xl mx-auto">
             You can rely on Gold Sniper, the best gold signals app, to keep you trading consistently from practically anywhere. What's stopping you from annihilating the markets if your laptop is connected and internet is available?
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <Button className="bg-[color:var(--brand-orange)] hover:bg-[color:var(--amber-accent)] text-black font-bold py-4 px-8 rounded-xl transition-all duration-200 flex items-center justify-center space-x-3 text-lg shadow-xl">
-              <SiApple className="w-6 h-6" />
-              <span>Download for iPhone</span>
+            <Button 
+              onClick={() => handleDownloadClick('android-final')}
+              disabled={isLoading === 'android-final'}
+              className="bg-[color:var(--brand-orange)] hover:bg-[color:var(--amber-accent)] text-black font-bold py-4 px-8 rounded-xl transition-all duration-200 flex items-center justify-center space-x-3 text-lg shadow-xl"
+            >
+              {isLoading === 'android-final' ? (
+                <>
+                  <div className="loading-spinner mr-2"></div>
+                  <span>Loading...</span>
+                </>
+              ) : (
+                <>
+                  <SiGoogleplay className="w-6 h-6" />
+                  <span>Download for Android</span>
+                </>
+              )}
             </Button>
-            <Button className="bg-[color:var(--brand-orange)] hover:bg-[color:var(--amber-accent)] text-black font-bold py-4 px-8 rounded-xl transition-all duration-200 flex items-center justify-center space-x-3 text-lg shadow-xl">
-              <SiGoogleplay className="w-6 h-6" />
-              <span>Download for Android</span>
+            <Button 
+              onClick={() => handleDownloadClick('ios-final')}
+              disabled={isLoading === 'ios-final'}
+              className="bg-[color:var(--brand-orange)] hover:bg-[color:var(--amber-accent)] text-black font-bold py-4 px-8 rounded-xl transition-all duration-200 flex items-center justify-center space-x-3 text-lg shadow-xl"
+            >
+              {isLoading === 'ios-final' ? (
+                <>
+                  <div className="loading-spinner mr-2"></div>
+                  <span>Loading...</span>
+                </>
+              ) : (
+                <>
+                  <SiApple className="w-6 h-6" />
+                  <span>Download for iPhone</span>
+                </>
+              )}
             </Button>
           </div>
         </div>
