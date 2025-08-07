@@ -24,9 +24,9 @@
     "professionalTraders": "Traders Professionnels"
   },
   "hero": {
-    "title": "Maîtrisez les marchés XAUUSD",
-    "titleHighlight": "avec Gold Sniper",
-    "subtitle": "Si vous êtes sérieux au sujet du trading d'or, vous n'avez besoin que des meilleurs signaux de trading d'or. Gold Sniper est votre boutique unique pour tout ce qui concerne l'or.",
+    "title": "Le #1 Gold Sniper",
+    "titleHighlight": "app au monde",
+    "subtitle": "Nous envoyons des signaux d'Or forts pour que vous puissiez copier les trades. Rejoignez-nous maintenant pour recevoir des insights de signaux pour le trading XAUUSD.",
     "stats": {
       "accuracy": "93% Précision",
       "users": "17K+ Utilisateurs",
@@ -35,18 +35,58 @@
     }
   },
   "features": {
-    "title": "Pourquoi choisir Gold Sniper ?",
+    "title": "Pourquoi sommes-nous le meilleur choix de signaux ?",
     "subtitle": "Nous donnons des signaux en temps réel quotidiennement et nous nous concentrons toujours sur les meilleures options plutôt que de sur-trader les mauvaises. Nos signaux d'or gratuits vous permettront de gagner de la manière la plus efficace et pratique possible.",
     "cards": {
-      "experienced": {
-        "title": "Traders expérimentés à vos côtés 🥇",
-        "description": "Nos experts en trading sont là pour vous aider. Utilisez leurs plus de 10 ans d'expérience pour enfin percer dans le marché de l'or."
+      "xauusd": {
+        "title": "Seulement XAUUSD",
+        "description": "Concentré exclusivement sur le trading d'or pour une expertise et une précision maximales."
       },
-      "signals": {
-        "title": "Signaux d'Achat et de Vente d'Or 🥇",
-        "description": "Recevez nos signaux sur votre téléphone et commencez à trader avec plus de succès. Vous pouvez trader quand et où vous voulez si vous suivez nos signaux de prix d'or en direct avec des alertes en temps réel via des notifications mobiles."
+      "members": {
+        "title": "17,000+ Membres Mondiaux",
+        "description": "Rejoignez notre communauté mondiale de traders d'or réussis dans le monde entier."
+      },
+      "best": {
+        "title": "Meilleur de l'Industrie",
+        "description": "Précision et performance de pointe dans l'industrie pour la livraison de signaux d'or."
+      },
+      "daily": {
+        "title": "Signaux Quotidiens",
+        "description": "Signaux quotidiens cohérents avec analyse de marché en temps réel et insights."
       }
     }
+  },
+  "performance": {
+    "title": "93% de signaux rentables avec nos signaux quotidiens XAUUSD",
+    "subtitle": "Nos utilisateurs comptent sur une précision de signaux forte et une exécution rapide pour sécuriser les gains sur le marché de l'Or.",
+    "button": "Nos Résultats"
+  },
+  "safeTraders": {
+    "title": "Nous sommes des traders sûrs et précis 💪",
+    "subtitle": "Avec 5+ ans en forex et 1000+ trades XAUUSD par mois, nous assurons seulement les entrées et alertes les plus nettes.",
+    "button": "Nos Résultats"
+  },
+  "howItWorks": {
+    "title": "C'est simple de commencer 🚀",
+    "steps": {
+      "download": {
+        "title": "Téléchargez l'app",
+        "description": "Obtenez GoldSniper depuis votre boutique d'applications et créez votre compte en quelques secondes."
+      },
+      "join": {
+        "title": "Rejoignez notre groupe Telegram",
+        "description": "Connectez-vous avec notre communauté de traders réussis et obtenez des insights exclusifs."
+      },
+      "copy": {
+        "title": "Commencez à copier les signaux",
+        "description": "Suivez nos points d'entrée et de sortie précis pour maximiser vos profits de trading."
+      }
+    },
+    "cta": "Rejoignez-nous aujourd'hui et commencez à gagner 20% mensuellement. 💰"
+  },
+  "download": {
+    "title": "Téléchargez-le gratuitement 🆓",
+    "subtitle": "Commencez avec GoldSniper aujourd'hui. Pas de frais cachés, pas d'abonnements. Juste des signaux premium de trading d'or à portée de main."
   },
   "seo": {
     "home": {

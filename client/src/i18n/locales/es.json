@@ -24,9 +24,9 @@
     "professionalTraders": "Traders Profesionales"
   },
   "hero": {
-    "title": "Domina los mercados XAUUSD",
-    "titleHighlight": "con Gold Sniper",
-    "subtitle": "Si hablas en serio sobre el trading de oro, no necesitas más que las mejores señales de trading de oro. Gold Sniper es tu tienda integral para todo lo relacionado con el oro.",
+    "title": "El #1 Gold Sniper",
+    "titleHighlight": "app del mundo",
+    "subtitle": "Enviamos señales fuertes de Oro para que puedas copiar trades. Únete ahora para recibir insights de señales para trading XAUUSD.",
     "stats": {
       "accuracy": "93% Precisión",
       "users": "17K+ Usuarios",
@@ -35,26 +35,58 @@
     }
   },
   "features": {
-    "title": "¿Por qué elegir Gold Sniper?",
+    "title": "¿Por qué somos la mejor opción de señales?",
     "subtitle": "Proporcionamos señales en tiempo real diariamente y siempre nos enfocamos en las mejores opciones en lugar de hacer sobretrading con las malas. Nuestras señales gratuitas de oro te permitirán ganar de las maneras más eficientes y convenientes posibles.",
     "cards": {
-      "experienced": {
-        "title": "Traders experimentados a tu lado 🥇",
-        "description": "Nuestros expertos en trading están aquí para ayudarte. Usa sus más de 10 años de experiencia para finalmente ingresar al mercado del oro."
+      "xauusd": {
+        "title": "Solo XAUUSD",
+        "description": "Enfocados exclusivamente en el trading de oro para máxima experiencia y precisión."
       },
-      "signals": {
-        "title": "Señales de Compra y Venta de Oro 🥇",
-        "description": "Recibe nuestras señales en tu teléfono y comienza a hacer trading con más éxito. Puedes hacer trading cuando y donde quieras si sigues nuestras señales en vivo de precio del oro con alertas en tiempo real a través de notificaciones móviles."
+      "members": {
+        "title": "17,000+ Miembros Mundiales",
+        "description": "Únete a nuestra comunidad global de traders de oro exitosos en todo el mundo."
       },
-      "overwhelmed": {
-        "title": "Nunca te sientas abrumado por el trading del mercado del Oro 🥇",
-        "description": "El conocimiento es poder; mientras más sepas, mejor será tu juego de trading. Solo los trades más fuertes en las condiciones actuales del mercado son proporcionados por nuestros analistas de trading."
+      "best": {
+        "title": "Mejor en la Industria",
+        "description": "Precisión y rendimiento líderes en la industria en la entrega de señales de oro."
       },
-      "interface": {
-        "title": "Interfaz Simple y Fácil de Usar 🥇",
-        "description": "¡No necesitas perder tiempo tratando de entender una interfaz confusa! La aplicación móvil Gold Sniper cuenta con un diseño simple y fácil de usar que te da precisamente lo que necesitas sin complicaciones ni esfuerzo. Puedes navegar rápidamente por todas las páginas."
+      "daily": {
+        "title": "Señales Diarias",
+        "description": "Señales diarias consistentes con análisis de mercado en tiempo real e insights."
       }
     }
+  },
+  "performance": {
+    "title": "93% de señales rentables con nuestras señales diarias XAUUSD",
+    "subtitle": "Nuestros usuarios confían en la precisión de señales fuertes y ejecución rápida para asegurar ganancias en el mercado del Oro.",
+    "button": "Nuestros Resultados"
+  },
+  "safeTraders": {
+    "title": "Somos traders seguros y precisos 💪",
+    "subtitle": "Con 5+ años en forex y 1000+ trades XAUUSD por mes, aseguramos solo las entradas y alertas más agudas.",
+    "button": "Nuestros Resultados"
+  },
+  "howItWorks": {
+    "title": "Es simple comenzar 🚀",
+    "steps": {
+      "download": {
+        "title": "Descarga la app",
+        "description": "Obtén GoldSniper de tu tienda de aplicaciones y crea tu cuenta en segundos."
+      },
+      "join": {
+        "title": "Únete a nuestro grupo de Telegram",
+        "description": "Conéctate con nuestra comunidad de traders exitosos y obtén insights exclusivos."
+      },
+      "copy": {
+        "title": "Comienza a copiar señales",
+        "description": "Sigue nuestros puntos de entrada y salida precisos para maximizar tus ganancias de trading."
+      }
+    },
+    "cta": "Únete a nosotros hoy y comienza a ganar 20% mensual. 💰"
+  },
+  "download": {
+    "title": "Descárgalo gratis 🆓",
+    "subtitle": "Comienza con GoldSniper hoy. Sin cargos ocultos, sin suscripciones. Solo señales premium de trading de oro al alcance de tu mano."
   },
   "video": {
     "title": "Ve GoldSniper en Acción",

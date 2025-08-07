@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Crosshair, Menu, X } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from './LanguageSwitcher';
 
 interface NavigationProps {
@@ -8,6 +9,7 @@ interface NavigationProps {
 
 export default function Navigation({ currentPage = 'home' }: NavigationProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
   return (
     <header className="bg-black/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-800">
       <div className="max-w-6xl mx-auto px-6 py-4">
@@ -24,31 +26,31 @@ export default function Navigation({ currentPage = 'home' }: NavigationProps) {
                 href="/" 
                 className={`transition-colors ${currentPage === 'home' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
               >
-Home
+                {t('nav.home')}
               </a>
               <a 
                 href="/signals-app" 
                 className={`transition-colors ${currentPage === 'features' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
               >
-App Features
+                {t('nav.signalsApp')}
               </a>
               <a 
                 href="#results" 
                 className={`transition-colors ${currentPage === 'results' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
               >
-Results
+                {t('nav.performance')}
               </a>
               <a 
                 href="#pricing" 
                 className={`transition-colors ${currentPage === 'pricing' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
               >
-Pricing
+                {t('nav.pricing')}
               </a>
               <a 
                 href="#insights" 
                 className={`transition-colors ${currentPage === 'insights' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300 hover:text-[color:var(--brand-orange)]'}`}
               >
-Insights
+                {t('nav.support')}
               </a>
             </nav>
             
@@ -76,35 +78,35 @@ Insights
                 className={`block text-lg transition-colors ${currentPage === 'home' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Home
+                {t('nav.home')}
               </a>
               <a 
                 href="/signals-app" 
                 className={`block text-lg transition-colors ${currentPage === 'features' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                App Features
+                {t('nav.signalsApp')}
               </a>
               <a 
                 href="#results" 
                 className={`block text-lg transition-colors ${currentPage === 'results' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Results
+                {t('nav.performance')}
               </a>
               <a 
                 href="#pricing" 
                 className={`block text-lg transition-colors ${currentPage === 'pricing' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Pricing
+                {t('nav.pricing')}
               </a>
               <a 
                 href="#insights" 
                 className={`block text-lg transition-colors ${currentPage === 'insights' ? 'text-[color:var(--brand-orange)] font-semibold' : 'text-gray-300'}`}
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                Insights
+                {t('nav.support')}
               </a>
               
               <div className="pt-4 border-t border-gray-700">

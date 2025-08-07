@@ -24,9 +24,9 @@
     "professionalTraders": "Professional Traders"
   },
   "hero": {
-    "title": "Grasp the XAUUSD markets",
-    "titleHighlight": "with Gold Sniper",
-    "subtitle": "If you are serious about trading gold, you need nothing but the best gold trading signals. Gold Sniper is your one stop shop for all things gold.",
+    "title": "The #1 Gold Sniper",
+    "titleHighlight": "app in the world",
+    "subtitle": "We send strong Gold signals for you to copy trade. Join now to receive signal insights for XAUUSD trading.",
     "stats": {
       "accuracy": "93% Accuracy",
       "users": "17K+ Users",
@@ -35,24 +35,24 @@
     }
   },
   "features": {
-    "title": "Why Choose Gold Sniper?",
+    "title": "Why we are the best signal choice?",
     "subtitle": "We give real-time signals on a daily basis and always focus on the best options rather than overtrading the bad ones. Our free gold signals will allow you to earn in the most efficient and convenient ways possible.",
     "cards": {
-      "experienced": {
-        "title": "Experienced traders by your side 🥇",
-        "description": "Our trade experts are here to help you. Use their 10+ years of experience to finally break into the gold market."
+      "xauusd": {
+        "title": "Only XAUUSD",
+        "description": "Focused exclusively on gold trading for maximum expertise and precision."
       },
-      "signals": {
-        "title": "Gold Buy and Sell Signals 🥇",
-        "description": "Get our signals delivered to your phone and start trading more successfully. You can trade whenever and wherever you want if you follow our gold price live signals with real-time alerts via mobile notifications."
+      "members": {
+        "title": "17,000+ Worldwide Members",
+        "description": "Join our global community of successful gold traders worldwide."
       },
-      "overwhelmed": {
-        "title": "Never be overwhelmed by trading the Gold market 🥇",
-        "description": "Knowledge is power; the more you know, the better your trading game will be. Only the strongest trades in current market conditions are provided by our trading analysts."
+      "best": {
+        "title": "Best in Industry",
+        "description": "Industry-leading accuracy and performance in gold signal delivery."
       },
-      "interface": {
-        "title": "Simple & Easy to Use Interface 🥇",
-        "description": "There's no need to waste time trying to figure out a confusing user interface! The Gold Sniper mobile app features a simple, user-friendly design that gets you precisely what you need without any fuss or effort. You can quickly navigate across all pages."
+      "daily": {
+        "title": "Daily Signals",
+        "description": "Consistent daily signals with real-time market analysis and insights."
       }
     }
   },
@@ -87,14 +87,42 @@
     }
   },
   "performance": {
-    "title": "Proven App Performance 📈",
-    "subtitle": "Our mobile app delivers consistent results with real-time data processing and lightning-fast signal delivery. Join thousands of successful traders using our platform daily.",
+    "title": "93% profitable signals with our daily XAUUSD signals",
+    "subtitle": "Our users rely on strong signal precision and fast execution to secure gains in the Gold market.",
+    "button": "Our Results",
     "stats": {
       "successRate": "Success Rate",
       "activeUsers": "Active Users",
       "marketCoverage": "Market Coverage",
       "signalDelivery": "Signal Delivery"
     }
+  },
+  "safeTraders": {
+    "title": "We are safe & precise traders 💪",
+    "subtitle": "With 5+ years in forex & 1000+ XAUUSD trades per month, we ensure only the sharpest entries and alerts.",
+    "button": "Our Results"
+  },
+  "howItWorks": {
+    "title": "It's simple to get started 🚀",
+    "steps": {
+      "download": {
+        "title": "Download the app",
+        "description": "Get GoldSniper from your app store and create your account in seconds."
+      },
+      "join": {
+        "title": "Join our Telegram group",
+        "description": "Connect with our community of successful traders and get exclusive insights."
+      },
+      "copy": {
+        "title": "Start copying signals",
+        "description": "Follow our precise entry and exit points to maximize your trading profits."
+      }
+    },
+    "cta": "Join us today and start making 20% monthly. 💰"
+  },
+  "download": {
+    "title": "Download it for free 🆓",
+    "subtitle": "Get started with GoldSniper today. No hidden charges, no subscriptions. Just premium gold trading signals at your fingertips."
   },
   "guide": {
     "title": "Complete Guide to Gold Trading with GoldSniper 📚",

@@ -83,12 +83,12 @@ export default function Landing() {
             {/* Main Content */}
             <div className="mb-12">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-                The #1 Gold Sniper
+                {t('hero.title')}
                 <br />
-                <span className="text-[color:var(--brand-orange)]">app in the world</span> 🔥
+                <span className="text-[color:var(--brand-orange)]">{t('hero.titleHighlight')}</span> 🔥
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-                We send strong Gold signals for you to copy trade. Join now to receive signal insights for XAUUSD trading.
+                {t('hero.subtitle')}
               </p>
               
               {/* CTA Buttons */}
@@ -101,12 +101,12 @@ export default function Landing() {
                   {isLoading === 'android' ? (
                     <>
                       <div className="loading-spinner mr-2"></div>
-                      <span>Loading...</span>
+                      <span>{t('common.loading')}</span>
                     </>
                   ) : (
                     <>
                       <SiGoogleplay className="w-8 h-8" />
-                      <span>Get on Google Play</span>
+                      <span>{t('common.downloadFor', { platform: 'Google Play' })}</span>
                     </>
                   )}
                 </Button>
@@ -118,12 +118,12 @@ export default function Landing() {
                   {isLoading === 'ios' ? (
                     <>
                       <div className="loading-spinner mr-2"></div>
-                      <span>Loading...</span>
+                      <span>{t('common.loading')}</span>
                     </>
                   ) : (
                     <>
                       <SiApple className="w-8 h-8" />
-                      <span>Download on App Store</span>
+                      <span>{t('common.downloadFor', { platform: 'App Store' })}</span>
                     </>
                   )}
                 </Button>
@@ -149,7 +149,7 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-12">
             <p className="text-white text-lg font-medium">
-              We are featured on popular signal partners like
+              {t('common.professionalTraders')}
             </p>
           </div>
           
@@ -177,39 +177,39 @@ export default function Landing() {
       <section id="features" className="bg-black py-20">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Why we are the best signal choice?</h2>
+            <h2 className="text-4xl font-bold text-white mb-4">{t('features.title')}</h2>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="fade-in bg-blue-600/20 border-blue-500/30 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
                 <img src="https://cdn.prod.website-files.com/61389171fc46d55b610c07fe/6138949899094ef54a8050b7_Group%2070.svg" alt="XAUUSD Trading" className="w-16 h-16 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3">Only XAUUSD</h3>
-                <p className="text-gray-300">Focused exclusively on gold trading for maximum expertise and precision.</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{t('features.cards.xauusd.title')}</h3>
+                <p className="text-gray-300">{t('features.cards.xauusd.description')}</p>
               </CardContent>
             </Card>
             
             <Card className="fade-in bg-yellow-600/20 border-yellow-500/30 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
                 <img src="https://cdn.prod.website-files.com/61389171fc46d55b610c07fe/614843340b4f491cc6e2673d_image%2016.png" alt="Worldwide Members" className="w-16 h-16 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3">17,000+ Worldwide Members</h3>
-                <p className="text-gray-300">Join our global community of successful gold traders worldwide.</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{t('features.cards.members.title')}</h3>
+                <p className="text-gray-300">{t('features.cards.members.description')}</p>
               </CardContent>
             </Card>
             
             <Card className="fade-in bg-pink-600/20 border-pink-500/30 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
                 <img src="https://cdn.prod.website-files.com/61389171fc46d55b610c07fe/614842f4d12a71cdaf9b6488_image%2017.png" alt="Best in Industry" className="w-16 h-16 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3">Best in Industry</h3>
-                <p className="text-gray-300">Industry-leading accuracy and performance in gold signal delivery.</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{t('features.cards.best.title')}</h3>
+                <p className="text-gray-300">{t('features.cards.best.description')}</p>
               </CardContent>
             </Card>
             
             <Card className="fade-in bg-green-600/20 border-green-500/30 backdrop-blur-sm">
               <CardContent className="p-8 text-center">
                 <img src="https://cdn.prod.website-files.com/61389171fc46d55b610c07fe/614843238a8b048290abd2a3_image%2018.png" alt="Daily Signals" className="w-16 h-16 mx-auto mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-3">Daily Signals</h3>
-                <p className="text-gray-300">Consistent daily signals with real-time market analysis and insights.</p>
+                <h3 className="text-xl font-semibold text-white mb-3">{t('features.cards.daily.title')}</h3>
+                <p className="text-gray-300">{t('features.cards.daily.description')}</p>
               </CardContent>
             </Card>
           </div>
@@ -222,14 +222,14 @@ export default function Landing() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="fade-in">
               <h2 className="text-4xl font-bold text-white mb-6">
-                93% profitable signals with our daily XAUUSD signals
+                {t('performance.title')}
               </h2>
               <p className="text-xl text-gray-300 mb-8">
-                Our users rely on strong signal precision and fast execution to secure gains in the Gold market.
+                {t('performance.subtitle')}
               </p>
               <Button className="bg-[color:var(--brand-orange)] hover:bg-[color:var(--amber-accent)] text-white font-bold py-6 px-12 rounded-xl transition-all duration-200 flex items-center justify-center space-x-3 h-16 text-xl shadow-xl transform hover:scale-105 min-w-[200px]">
                 <TrendingUp className="w-6 h-6" />
-                <span>Our Results</span>
+                <span>{t('performance.button')}</span>
               </Button>
             </div>
             
@@ -262,14 +262,14 @@ export default function Landing() {
             
             <div className="fade-in">
               <h2 className="text-4xl font-bold text-black mb-6">
-                We are safe & precise traders 💪
+                {t('safeTraders.title')}
               </h2>
               <p className="text-xl text-black/80 mb-8">
-                With 5+ years in forex & 1000+ XAUUSD trades per month, we ensure only the sharpest entries and alerts.
+                {t('safeTraders.subtitle')}
               </p>
               <Button className="bg-black text-white hover:bg-gray-900 font-bold py-6 px-12 rounded-xl transition-all duration-200 flex items-center justify-center space-x-3 h-16 text-xl shadow-xl transform hover:scale-105 min-w-[200px]">
                 <Award className="w-6 h-6" />
-                <span>Our Results</span>
+                <span>{t('safeTraders.button')}</span>
               </Button>
             </div>
           </div>
@@ -281,7 +281,7 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-white mb-4">
-              It's simple to get started 🚀
+              {t('howItWorks.title')}
             </h2>
           </div>
           
@@ -290,31 +290,31 @@ export default function Landing() {
               <div className="w-20 h-20 bg-[color:var(--brand-orange)] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <img src="https://cdn.prod.website-files.com/61389171fc46d55b610c07fe/614846ec1f4bfca9d4f0cf91_1.svg" alt="Step 1" className="w-12 h-12 object-contain" />
               </div>
-              <h3 className="text-2xl font-semibold text-white mb-4">Download the app</h3>
-              <p className="text-gray-300 text-lg">Get GoldSniper from your app store and create your account in seconds.</p>
+              <h3 className="text-2xl font-semibold text-white mb-4">{t('howItWorks.steps.download.title')}</h3>
+              <p className="text-gray-300 text-lg">{t('howItWorks.steps.download.description')}</p>
             </div>
             
             <div className="text-center fade-in">
               <div className="w-20 h-20 bg-[color:var(--brand-orange)] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <img src="https://cdn.prod.website-files.com/61389171fc46d55b610c07fe/614846ec9864f117fba866a6_2.svg" alt="Step 2" className="w-12 h-12 object-contain" />
               </div>
-              <h3 className="text-2xl font-semibold text-white mb-4">Join our Telegram group</h3>
-              <p className="text-gray-300 text-lg">Connect with our community of successful traders and get exclusive insights.</p>
+              <h3 className="text-2xl font-semibold text-white mb-4">{t('howItWorks.steps.join.title')}</h3>
+              <p className="text-gray-300 text-lg">{t('howItWorks.steps.join.description')}</p>
             </div>
             
             <div className="text-center fade-in">
               <div className="w-20 h-20 bg-[color:var(--brand-orange)] rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg">
                 <img src="https://cdn.prod.website-files.com/61389171fc46d55b610c07fe/614846ec2df9d37fc5428497_3.svg" alt="Step 3" className="w-12 h-12 object-contain" />
               </div>
-              <h3 className="text-2xl font-semibold text-white mb-4">Start copying signals</h3>
-              <p className="text-gray-300 text-lg">Follow our precise entry and exit points to maximize your trading profits.</p>
+              <h3 className="text-2xl font-semibold text-white mb-4">{t('howItWorks.steps.copy.title')}</h3>
+              <p className="text-gray-300 text-lg">{t('howItWorks.steps.copy.description')}</p>
             </div>
           </div>
           
           <div className="text-center mb-12 fade-in">
             <div className="inline-block bg-[color:var(--green-success)]/20 border border-[color:var(--green-success)]/30 rounded-2xl px-8 py-4">
               <p className="text-white text-xl font-semibold">
-                Join us today and start making 20% monthly. 💰
+                {t('howItWorks.cta')}
               </p>
             </div>
           </div>
@@ -336,10 +336,10 @@ export default function Landing() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center fade-in">
             <h2 className="text-4xl font-bold text-white mb-8">
-              Download it for free 🆓
+              {t('download.title')}
             </h2>
             <p className="text-xl text-white/90 mb-16 max-w-2xl mx-auto">
-              Get started with GoldSniper today. No hidden charges, no subscriptions. Just premium gold trading signals at your fingertips.
+              {t('download.subtitle')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-8 justify-center">
@@ -348,34 +348,34 @@ export default function Landing() {
                 disabled={isLoading === 'android-pricing'}
                 className="bg-green-600 text-white hover:bg-green-700 font-bold py-5 px-10 rounded-xl text-lg flex items-center justify-center space-x-3 shadow-lg transform hover:scale-105 transition-all duration-200"
               >
-                {isLoading === 'android-pricing' ? (
-                  <>
-                    <div className="loading-spinner mr-2"></div>
-                    <span>Loading...</span>
-                  </>
-                ) : (
-                  <>
-                    <SiGoogleplay className="w-6 h-6" />
-                    <span>Get on Google Play</span>
-                  </>
-                )}
+                                  {isLoading === 'android-pricing' ? (
+                    <>
+                      <div className="loading-spinner mr-2"></div>
+                      <span>{t('common.loading')}</span>
+                    </>
+                  ) : (
+                    <>
+                      <SiGoogleplay className="w-6 h-6" />
+                      <span>{t('common.downloadFor', { platform: 'Google Play' })}</span>
+                    </>
+                  )}
               </Button>
               <Button 
                 onClick={() => handleDownloadClick('ios-pricing')}
                 disabled={isLoading === 'ios-pricing'}
                 className="bg-black text-white hover:bg-gray-900 font-bold py-5 px-10 rounded-xl text-lg flex items-center justify-center space-x-3 shadow-lg transform hover:scale-105 transition-all duration-200 border-2 border-gray-700"
               >
-                {isLoading === 'ios-pricing' ? (
-                  <>
-                    <div className="loading-spinner mr-2"></div>
-                    <span>Loading...</span>
-                  </>
-                ) : (
-                  <>
-                    <SiApple className="w-6 h-6" />
-                    <span>Download on App Store</span>
-                  </>
-                )}
+                                  {isLoading === 'ios-pricing' ? (
+                    <>
+                      <div className="loading-spinner mr-2"></div>
+                      <span>{t('common.loading')}</span>
+                    </>
+                  ) : (
+                    <>
+                      <SiApple className="w-6 h-6" />
+                      <span>{t('common.downloadFor', { platform: 'App Store' })}</span>
+                    </>
+                  )}
               </Button>
             </div>
           </div>

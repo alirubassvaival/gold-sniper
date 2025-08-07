@@ -24,15 +24,69 @@
     "professionalTraders": "Professionelle Trader"
   },
   "hero": {
-    "title": "Beherrschen Sie die XAUUSD-Märkte",
-    "titleHighlight": "mit Gold Sniper",
-    "subtitle": "Wenn Sie es ernst meinen mit dem Gold-Trading, brauchen Sie nur die besten Gold-Trading-Signale. Gold Sniper ist Ihr One-Stop-Shop für alles rund um Gold.",
+    "title": "Der #1 Gold Sniper",
+    "titleHighlight": "App der Welt",
+    "subtitle": "Wir senden starke Gold-Signale für Sie zum Copy-Trading. Treten Sie jetzt bei, um Signal-Einblicke für XAUUSD-Trading zu erhalten.",
     "stats": {
       "accuracy": "93% Genauigkeit",
       "users": "17K+ Nutzer",
       "coverage": "24/7 Abdeckung",
       "delivery": "< 1s Lieferung"
     }
+  },
+  "features": {
+    "title": "Warum sind wir die beste Signalwahl?",
+    "subtitle": "Wir geben täglich Echtzeit-Signale und konzentrieren uns immer auf die besten Optionen, anstatt die schlechten zu überhandeln. Unsere kostenlosen Gold-Signale ermöglichen es Ihnen, auf die effizienteste und bequemste Weise zu verdienen.",
+    "cards": {
+      "xauusd": {
+        "title": "Nur XAUUSD",
+        "description": "Ausschließlich auf Gold-Trading fokussiert für maximale Expertise und Präzision."
+      },
+      "members": {
+        "title": "17,000+ Weltweite Mitglieder",
+        "description": "Treten Sie unserer globalen Community erfolgreicher Gold-Trader weltweit bei."
+      },
+      "best": {
+        "title": "Beste der Branche",
+        "description": "Branchenführende Genauigkeit und Leistung bei der Lieferung von Gold-Signalen."
+      },
+      "daily": {
+        "title": "Tägliche Signale",
+        "description": "Konsistente tägliche Signale mit Echtzeit-Marktanalyse und Einblicken."
+      }
+    }
+  },
+  "performance": {
+    "title": "93% profitable Signale mit unseren täglichen XAUUSD-Signalen",
+    "subtitle": "Unsere Nutzer verlassen sich auf starke Signalpräzision und schnelle Ausführung, um Gewinne im Gold-Markt zu sichern.",
+    "button": "Unsere Ergebnisse"
+  },
+  "safeTraders": {
+    "title": "Wir sind sichere und präzise Trader 💪",
+    "subtitle": "Mit 5+ Jahren im Forex und 1000+ XAUUSD-Trades pro Monat stellen wir nur die schärfsten Einstiege und Alerts sicher.",
+    "button": "Unsere Ergebnisse"
+  },
+  "howItWorks": {
+    "title": "Es ist einfach zu beginnen 🚀",
+    "steps": {
+      "download": {
+        "title": "App herunterladen",
+        "description": "Holen Sie sich GoldSniper aus Ihrem App Store und erstellen Sie Ihr Konto in Sekunden."
+      },
+      "join": {
+        "title": "Unserer Telegram-Gruppe beitreten",
+        "description": "Verbinden Sie sich mit unserer Community erfolgreicher Trader und erhalten Sie exklusive Einblicke."
+      },
+      "copy": {
+        "title": "Signale kopieren beginnen",
+        "description": "Folgen Sie unseren präzisen Ein- und Ausstiegspunkten, um Ihre Trading-Gewinne zu maximieren."
+      }
+    },
+    "cta": "Treten Sie uns heute bei und beginnen Sie, 20% monatlich zu verdienen. 💰"
+  },
+  "download": {
+    "title": "Kostenlos herunterladen 🆓",
+    "subtitle": "Starten Sie heute mit GoldSniper. Keine versteckten Gebühren, keine Abonnements. Nur Premium-Gold-Trading-Signale auf Knopfdruck."
   },
   "seo": {
     "home": {
