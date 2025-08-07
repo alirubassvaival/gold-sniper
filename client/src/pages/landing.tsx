@@ -48,7 +48,7 @@ export default function Landing() {
         title="GoldSniper - #1 Gold Trading Signals App | 93% Accuracy XAUUSD"
         description="Get professional gold trading signals with 93% accuracy. Join thousands of successful XAUUSD traders using GoldSniper's proven signals and analysis."
         keywords="gold trading signals, XAUUSD signals, gold sniper, trading app, forex signals, gold analysis, trading alerts"
-        canonical="https://goldsniper.replit.app/"
+        pagePath="/"
       />
       <Navigation currentPage="home" />
 

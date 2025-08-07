@@ -1,48 +1,54 @@
 import { supportedLanguages, defaultLanguage } from '../i18n';
 
-export const getLanguageFromPath = (pathname: string): string => {
-  const segments = pathname.split('/').filter(Boolean);
-  const firstSegment = segments[0];
-  
-  if (firstSegment && Object.keys(supportedLanguages).includes(firstSegment)) {
-    return firstSegment;
-  }
-  
-  return defaultLanguage;
-};
+/**
+ * Get the current language from URL
+ */
+export function getLanguageFromUrl(): string {
+  const path = window.location.pathname;
+  const langMatch = path.match(/^\/([a-z]{2})(\/|$)/);
+  return langMatch ? langMatch[1] : defaultLanguage;
+}
 
-export const removeLanguageFromPath = (pathname: string): string => {
-  const segments = pathname.split('/').filter(Boolean);
-  const supportedLangCodes = Object.keys(supportedLanguages);
-  
-  if (segments[0] && supportedLangCodes.includes(segments[0])) {
-    segments.shift();
-  }
-  
-  return '/' + segments.join('/');
-};
+/**
+ * Check if a language code is supported
+ */
+export function isSupportedLanguage(lang: string): boolean {
+  return Object.keys(supportedLanguages).includes(lang);
+}
 
-export const addLanguageToPath = (pathname: string, language: string): string => {
-  const cleanPath = removeLanguageFromPath(pathname);
-  
-  if (language === defaultLanguage) {
-    return cleanPath || '/';
-  }
-  
-  return `/${language}${cleanPath}`;
-};
+/**
+ * Get language data by code
+ */
+export function getLanguageData(lang: string) {
+  return supportedLanguages[lang as keyof typeof supportedLanguages];
+}
 
-export const getLocalizedPath = (path: string, language: string): string => {
-  if (language === defaultLanguage) {
-    return path;
-  }
-  
-  return `/${language}${path}`;
-};
+/**
+ * Get all supported language codes
+ */
+export function getSupportedLanguages(): string[] {
+  return Object.keys(supportedLanguages);
+}
 
-export const generateHreflangLinks = (currentPath: string) => {
-  return Object.keys(supportedLanguages).map(lang => ({
-    hreflang: lang,
-    href: `${window.location.origin}${getLocalizedPath(currentPath, lang)}`
-  }));
-};
+/**
+ * Update URL with new language
+ */
+export function updateUrlWithLanguage(newLang: string): void {
+  if (!isSupportedLanguage(newLang)) {
+    return;
+  }
+
+  const currentPath = window.location.pathname;
+  const pathWithoutLang = currentPath.replace(/^\/[a-z]{2}/, '');
+  const newPath = `/${newLang}${pathWithoutLang}`;
+  
+  window.history.pushState({}, '', newPath);
+}
+
+/**
+ * Get the path without language prefix
+ */
+export function getPathWithoutLanguage(): string {
+  const path = window.location.pathname;
+  return path.replace(/^\/[a-z]{2}/, '') || '/';
+}

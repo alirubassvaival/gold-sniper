@@ -30,6 +30,36 @@ const resources = {
   zh: { translation: zhTranslation }
 };
 
+// Custom language detector for URL-based language detection
+const customLanguageDetector = {
+  name: 'customLanguageDetector',
+  lookup() {
+    // Check URL path first
+    const path = window.location.pathname;
+    const langMatch = path.match(/^\/([a-z]{2})(\/|$)/);
+    if (langMatch && supportedLanguages[langMatch[1] as keyof typeof supportedLanguages]) {
+      return langMatch[1];
+    }
+    
+    // Fallback to localStorage
+    const storedLang = localStorage.getItem('i18nextLng');
+    if (storedLang && supportedLanguages[storedLang as keyof typeof supportedLanguages]) {
+      return storedLang;
+    }
+    
+    // Fallback to browser language
+    const browserLang = navigator.language.split('-')[0];
+    if (supportedLanguages[browserLang as keyof typeof supportedLanguages]) {
+      return browserLang;
+    }
+    
+    return defaultLanguage;
+  },
+  cacheUserLanguage(lng: string) {
+    localStorage.setItem('i18nextLng', lng);
+  }
+};
+
 i18n
   .use(Backend)
   .use(LanguageDetector)
@@ -44,7 +74,7 @@ i18n
     },
     
     detection: {
-      order: ['path', 'localStorage', 'navigator', 'htmlTag'],
+      order: ['customLanguageDetector', 'localStorage', 'navigator', 'htmlTag'],
       caches: ['localStorage'],
       lookupFromPathIndex: 0
     },
@@ -55,5 +85,8 @@ i18n
       useSuspense: false
     }
   });
+
+// Add custom language detector
+i18n.services.languageDetector.addDetector(customLanguageDetector);
 
 export default i18n;

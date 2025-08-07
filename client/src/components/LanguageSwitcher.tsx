@@ -3,15 +3,17 @@ import { ChevronDown, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTranslation } from 'react-i18next';
 import { supportedLanguages } from '../i18n';
+import { useLanguageChange, useLanguageFromUrl } from './LanguageRouter';
 
 export default function LanguageSwitcher() {
   const [isOpen, setIsOpen] = useState(false);
-  const { i18n } = useTranslation();
-  const currentLanguage = i18n.language || 'en';
+  const { t } = useTranslation();
+  const changeLanguage = useLanguageChange();
+  const currentLanguage = useLanguageFromUrl();
   const currentLangData = supportedLanguages[currentLanguage as keyof typeof supportedLanguages];
 
-  const changeLanguage = (language: string) => {
-    i18n.changeLanguage(language);
+  const handleLanguageChange = (language: string) => {
+    changeLanguage(language);
     setIsOpen(false);
   };
 
@@ -38,7 +40,7 @@ export default function LanguageSwitcher() {
             {Object.entries(supportedLanguages).map(([code, data]) => (
               <button
                 key={code}
-                onClick={() => changeLanguage(code)}
+                onClick={() => handleLanguageChange(code)}
                 className={`w-full px-4 py-3 text-left flex items-center space-x-3 hover:bg-gray-800 transition-colors first:rounded-t-lg last:rounded-b-lg ${
                   currentLanguage === code ? 'bg-gray-800 text-[color:var(--brand-orange)]' : 'text-white'
                 }`}

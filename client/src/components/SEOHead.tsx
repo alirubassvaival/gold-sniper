@@ -1,4 +1,7 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+import { supportedLanguages } from '../i18n';
+import { useLanguageFromUrl } from './LanguageRouter';
 
 interface SEOHeadProps {
   title?: string;
@@ -6,6 +9,7 @@ interface SEOHeadProps {
   keywords?: string;
   canonical?: string;
   ogImage?: string;
+  pagePath?: string; // e.g., '/', '/signals-app'
 }
 
 export default function SEOHead({ 
@@ -13,8 +17,13 @@ export default function SEOHead({
   description, 
   keywords, 
   canonical, 
-  ogImage 
+  ogImage,
+  pagePath = '/'
 }: SEOHeadProps) {
+  const { t } = useTranslation();
+  const currentLanguage = useLanguageFromUrl();
+  const baseUrl = 'https://goldsniper.replit.app';
+
   useEffect(() => {
     // Update document title
     if (title) {
@@ -37,15 +46,44 @@ export default function SEOHead({
       }
     }
 
-    // Update canonical URL
-    if (canonical) {
-      let canonicalLink = document.querySelector('link[rel="canonical"]');
-      if (canonicalLink) {
-        canonicalLink.setAttribute('href', canonical);
-      }
+    // Update canonical URL with language
+    const canonicalUrl = canonical || `${baseUrl}/${currentLanguage}${pagePath}`;
+    let canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink) {
+      canonicalLink.setAttribute('href', canonicalUrl);
     }
 
-    // Hreflang functionality will be implemented later when translations are ready
+    // Update language meta tag
+    let langMeta = document.querySelector('meta[http-equiv="content-language"]');
+    if (langMeta) {
+      langMeta.setAttribute('content', currentLanguage);
+    }
+
+    // Update hreflang tags for all supported languages
+    const updateHreflangTags = () => {
+      // Remove existing hreflang tags
+      document.querySelectorAll('link[rel="alternate"][hreflang]').forEach(tag => {
+        tag.remove();
+      });
+
+      // Add hreflang tags for all languages
+      Object.keys(supportedLanguages).forEach(lang => {
+        const link = document.createElement('link');
+        link.rel = 'alternate';
+        link.hreflang = lang;
+        link.href = `${baseUrl}/${lang}${pagePath}`;
+        document.head.appendChild(link);
+      });
+
+      // Add x-default hreflang
+      const xDefaultLink = document.createElement('link');
+      xDefaultLink.rel = 'alternate';
+      xDefaultLink.hreflang = 'x-default';
+      xDefaultLink.href = `${baseUrl}/en${pagePath}`;
+      document.head.appendChild(xDefaultLink);
+    };
+
+    updateHreflangTags();
 
     // Update Open Graph tags
     if (title) {
@@ -62,11 +100,10 @@ export default function SEOHead({
       }
     }
 
-    if (canonical) {
-      let ogUrl = document.querySelector('meta[property="og:url"]');
-      if (ogUrl) {
-        ogUrl.setAttribute('content', canonical);
-      }
+    const ogUrl = canonical || `${baseUrl}/${currentLanguage}${pagePath}`;
+    let ogUrlMeta = document.querySelector('meta[property="og:url"]');
+    if (ogUrlMeta) {
+      ogUrlMeta.setAttribute('content', ogUrl);
     }
 
     if (ogImage) {
@@ -75,7 +112,14 @@ export default function SEOHead({
         ogImg.setAttribute('content', ogImage);
       }
     }
-  }, [title, description, keywords, canonical, ogImage]);
+
+    // Update og:locale
+    let ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale) {
+      ogLocale.setAttribute('content', currentLanguage);
+    }
+
+  }, [title, description, keywords, canonical, ogImage, pagePath, currentLanguage, baseUrl]);
 
   return null;
 }

@@ -27,7 +27,7 @@ export default function SignalsApp() {
         title="GoldSniper App Features - Professional Gold Trading Signals"
         description="Discover GoldSniper's advanced features for XAUUSD trading. Get 93% accurate signals, real-time alerts, expert analysis, and professional trading tools on mobile."
         keywords="goldsniper app features, XAUUSD trading app, gold signals mobile app, trading alerts, professional gold analysis, mobile trading platform"
-        canonical="https://goldsniper.replit.app/signals-app"
+        pagePath="/signals-app"
       />
       <Navigation currentPage="features" />
 

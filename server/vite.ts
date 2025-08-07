@@ -78,8 +78,18 @@ export function serveStatic(app: Express) {
 
   app.use(express.static(distPath));
 
-  // fall through to index.html if the file doesn't exist
-  app.use("*", (_req, res) => {
-    res.sendFile(path.resolve(distPath, "index.html"));
+  // Handle language-specific routes and fall through to index.html
+  app.use("*", (req, res) => {
+    // Check if the request is for a language-specific route
+    const path = req.path;
+    const langMatch = path.match(/^\/([a-z]{2})(\/|$)/);
+    
+    if (langMatch) {
+      // Language-specific route - serve the main app
+      res.sendFile(path.resolve(distPath, "index.html"));
+    } else {
+      // Regular route - serve the main app
+      res.sendFile(path.resolve(distPath, "index.html"));
+    }
   });
 }

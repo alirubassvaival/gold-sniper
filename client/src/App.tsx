@@ -7,10 +7,21 @@ import Landing from "@/pages/landing";
 import SignalsApp from "@/pages/signals-app";
 import NotFound from "@/pages/not-found";
 import { Suspense } from "react";
+import LanguageRouter from "@/components/LanguageRouter";
+import { supportedLanguages } from "./i18n";
 
 function Router() {
   return (
     <Switch>
+      {/* Language-specific routes */}
+      {Object.keys(supportedLanguages).map(lang => (
+        <Route key={lang} path={`/${lang}`} component={Landing} />
+      ))}
+      {Object.keys(supportedLanguages).map(lang => (
+        <Route key={`${lang}-signals`} path={`/${lang}/signals-app`} component={SignalsApp} />
+      ))}
+      
+      {/* Fallback routes for backward compatibility */}
       <Route path="/" component={Landing} />
       <Route path="/signals-app" component={SignalsApp} />
       <Route component={NotFound} />
@@ -23,8 +34,10 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Suspense fallback={<div>Loading...</div>}>
-          <Toaster />
-          <Router />
+          <LanguageRouter>
+            <Toaster />
+            <Router />
+          </LanguageRouter>
         </Suspense>
       </TooltipProvider>
     </QueryClientProvider>
