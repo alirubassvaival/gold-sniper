@@ -21,12 +21,16 @@
     "tradingSignals": "Señales de Trading",
     "goldTrading": "Trading de Oro",
     "xauusd": "XAUUSD",
-    "professionalTraders": "Traders Profesionales"
+    "professionalTraders": "Traders Profesionales",
+    "getOnGooglePlay": "Obtener en Google Play",
+    "downloadOnAppStore": "Descargar en App Store",
+    "downloadForIphone": "Descargar para iPhone",
+    "downloadForAndroid": "Descargar para Android"
   },
   "hero": {
-    "title": "El #1 Gold Sniper",
-    "titleHighlight": "app del mundo",
-    "subtitle": "Enviamos señales fuertes de Oro para que puedas copiar trades. Únete ahora para recibir insights de señales para trading XAUUSD.",
+    "title": "Domina los mercados XAUUSD",
+    "titleHighlight": "con Gold Sniper",
+    "subtitle": "Si hablas en serio sobre el trading de oro, no necesitas más que las mejores señales de trading de oro. Gold Sniper es tu tienda integral para todo lo relacionado con el oro.",
     "stats": {
       "accuracy": "93% Precisión",
       "users": "17K+ Usuarios",
@@ -35,62 +39,219 @@
     }
   },
   "features": {
-    "title": "¿Por qué somos la mejor opción de señales?",
+    "title": "¿Por qué elegir Gold Sniper?",
     "subtitle": "Proporcionamos señales en tiempo real diariamente y siempre nos enfocamos en las mejores opciones en lugar de hacer sobretrading con las malas. Nuestras señales gratuitas de oro te permitirán ganar de las maneras más eficientes y convenientes posibles.",
     "cards": {
-      "xauusd": {
-        "title": "Solo XAUUSD",
-        "description": "Enfocados exclusivamente en el trading de oro para máxima experiencia y precisión."
+      "experienced": {
+        "title": "Traders experimentados a tu lado 🥇",
+        "description": "Nuestros expertos en trading están aquí para ayudarte. Usa sus más de 10 años de experiencia para finalmente ingresar al mercado del oro."
       },
-      "members": {
-        "title": "17,000+ Miembros Mundiales",
-        "description": "Únete a nuestra comunidad global de traders de oro exitosos en todo el mundo."
+      "signals": {
+        "title": "Señales de Compra y Venta de Oro 🥇",
+        "description": "Recibe nuestras señales en tu teléfono y comienza a hacer trading con más éxito. Puedes hacer trading cuando y donde quieras si sigues nuestras señales en vivo de precio del oro con alertas en tiempo real a través de notificaciones móviles."
       },
-      "best": {
-        "title": "Mejor en la Industria",
-        "description": "Precisión y rendimiento líderes en la industria en la entrega de señales de oro."
+      "overwhelmed": {
+        "title": "Nunca te sientas abrumado por el trading del mercado del Oro 🥇",
+        "description": "El conocimiento es poder; mientras más sepas, mejor será tu juego de trading. Solo los trades más fuertes en las condiciones actuales del mercado son proporcionados por nuestros analistas de trading."
       },
-      "daily": {
-        "title": "Señales Diarias",
-        "description": "Señales diarias consistentes con análisis de mercado en tiempo real e insights."
+      "interface": {
+        "title": "Interfaz Simple y Fácil de Usar 🥇",
+        "description": "¡No necesitas perder tiempo tratando de entender una interfaz confusa! La aplicación móvil Gold Sniper cuenta con un diseño simple y fácil de usar que te da precisamente lo que necesitas sin complicaciones ni esfuerzo. Puedes navegar rápidamente por todas las páginas."
       }
+    },
+    "cta": {
+      "title": "¡Todas las características más recientes y populares de Gold Sniper ahora están accesibles en tu dispositivo móvil!"
+    }
+  },
+  "video": {
+    "title": "Ve GoldSniper en Acción",
+    "subtitle": "Observa cómo los traders profesionales usan nuestra aplicación móvil para recibir y ejecutar señales de trading de oro de alta precisión.",
+    "description": "Experimenta el poder de las señales de trading de oro en tiempo real"
+  },
+  "howItWorks": {
+    "title": "¿Cómo funcionan las señales de Gold Sniper? 🥇",
+    "subtitle": "Nuestros analistas examinan cada componente para garantizar que tengas un sistema de señales de oro simple de usar para una experiencia de trading de alta calidad. Si sigues nuestras ideas de trading en vivo, puedes duplicar rápidamente nuestros trades en vivo en tu cuenta de trading.",
+    "steps": {
+      "step1": "Nuestro analista identifica una oportunidad de mercado que podría resultar en un trade rentable",
+      "step2": "Siguiendo un análisis de riesgo, determinan el TP y SL que maximizarán el beneficio mientras aseguran que las pérdidas se minimicen",
+      "step3": "La señal se confirma y se entrega inmediatamente a tu teléfono",
+      "step4": "¡Ejecutas el trade en tu cuenta de broker, manteniendo en mente el TP y SL!",
+      "step5": "¡Descansa sin estar ansioso por el trade, toma una bebida y espera la siguiente! Revisa tu cuenta bancaria, ve cuánto dinero has ganado y siéntete bien! 💰"
+    }
+  },
+  "howToRead": {
+    "title": "Cómo leer las señales de oro de Gold Sniper 🥇",
+    "subtitle": "En nuestra terminal de señales de oro, encontrarás la siguiente información:",
+    "status": {
+      "title": "Estado",
+      "description": "El estado actual de la señal:",
+      "live": "Sigue la alerta e ingresa al mercado",
+      "closed": "La señal ya no está operativa"
+    },
+    "action": {
+      "title": "Acción",
+      "description": "Señales de compra o venta con precio actual",
+      "buy": "Señales de compra de oro",
+      "sell": "Señales de venta de oro"
+    },
+    "entryPrice": {
+      "title": "Precio de Entrada",
+      "description": "Los miembros premium obtienen acceso al precio de entrada de cada señal de trade"
+    },
+    "stopLoss": {
+      "title": "Stop Loss",
+      "description": "Un punto de salida automatizado que protege tu inversión. Este es el precio propuesto para salir de la transacción si va en contra de nuestro análisis."
+    },
+    "payAttention": {
+      "title": "¡Presta Atención! 🥇",
+      "subtitle": "Hay 3 formas diferentes para que las señales XAUUSD se cierren:",
+      "automaticallySl": "Al alcanzar el nivel de stop loss",
+      "automaticallyTp": "Al alcanzar el nivel de take profit",
+      "manually": "Nuestro equipo cierra la señal basándose en el momentum y factores del mercado"
+    }
+  },
+  "goldTradingEducation": {
+    "title": "¿Qué es el trading de oro según Gold Sniper? 🥇",
+    "subtitle": "Debes saber que el oro es un metal precioso fósil y no renovable. Las reservas de minas abiertas se agotan año tras año, resultando en un crecimiento consistente en el valor de este activo con el tiempo.",
+    "safeHaven": {
+      "title": "Inversión de Refugio Seguro",
+      "description": "El oro también es una especie de refugio seguro para el capital de inversión. Las recesiones económicas siempre resultan en una gran salida de dinero de los valores. Temiendo desastres como resultado del crash del mercado de valores hará que los inversores cambien dinero a activos más confiables, uno de los cuales es el oro."
+    },
+    "longTerm": {
+      "title": "Crecimiento de Valor a Largo Plazo",
+      "description": "La depreciación anual del dinero fiduciario, a menudo conocida como inflación, puede explicar el aumento continuo en los precios del oro. El valor del oro siempre sube a largo plazo, independientemente del entorno macroeconómico."
+    },
+    "successMetrics": {
+      "title": "Métricas de Éxito en Trading",
+      "subtitle": "Un ingreso mensual constante de 10-20% es un logro financiero fuerte para un trader de oro. Solo necesitarás hacer trading intradiario para lograr tal resultado en el trading de oro.",
+      "monthlyIncome": "Objetivo de Ingreso Mensual",
+      "timeframe": "Mejor Timeframe",
+      "tradingPair": "Par de Trading Principal"
+    }
+  },
+  "tradingTips": {
+    "title": "Nuestros 7 mejores consejos para hacer trading de oro exitosamente 🥇",
+    "subtitle": "Como puedes ver, seguir nuestras señales de moneda de oro es directo. Cuando aparece una señal en nuestra app de señales o recibes una alerta en tu teléfono, abre un trade al precio spot y usa los ajustes predeterminados de stop loss y take profit.",
+    "tips": {
+      "plan": {
+        "title": "Planifica tus Trades",
+        "description": "Antes de comenzar una nueva posición, haz un plan para entrar y salir de un trade. Mantén tu estrategia y resiste la tentación de modificarla en el momento."
+      },
+      "riskManagement": {
+        "title": "Gestión de Riesgo",
+        "description": "Nunca abras posiciones con todo tu capital disponible. Usa no más del 20-25% de ellos para todas las posiciones abiertas y no más del 2% para cada trade individual."
+      },
+      "cutLosses": {
+        "title": "Corta las Pérdidas Temprano",
+        "description": "Nunca agraves una situación perdedora. Las órdenes de stop deben usarse para minimizar las pérdidas potenciales en todas las posiciones activas."
+      },
+      "followTrend": {
+        "title": "Sigue la Tendencia",
+        "description": "En lugar de ir contra el mercado, ve con él. ¡El mercado siempre está correcto!"
+      },
+      "bigPicture": {
+        "title": "Enfoque de Panorama General",
+        "description": "Mira el panorama general. Incluso si solo haces trading por un corto tiempo, siempre debes mantener un ojo en la tendencia a largo plazo."
+      },
+      "review": {
+        "title": "Revisa tus Trades",
+        "description": "Haz un hábito de revisar tus trades. De esta manera, podrás hacer un seguimiento de tus ganancias y pérdidas, así como descubrir cualquier defecto."
+      },
+      "stopLoss": {
+        "title": "Usa Órdenes de Stop Loss",
+        "description": "Siempre protege tu capital con órdenes de stop loss. Ocasionalmente proporcionamos notas con nuestras señales, como \"Sube el stop loss al punto de equilibrio si el precio se acerca a nuestro take profit.\""
+      }
+    }
+  },
+  "marketFactors": {
+    "title": "Factores que impactan los precios del oro 🥇",
+    "subtitle": "Aquí es donde Gold Sniper puede ayudarte a conocer todos los diferentes factores que afectan el oro y encontrar las mejores oportunidades de trading.",
+    "supplyDemand": {
+      "title": "Oferta y Demanda",
+      "description": "Según los datos de volumen por día, la fabricación de joyería representa la mitad de la demanda mundial. Otro 40% está compuesto por cuentas de inversión. Cuando la demanda es alta y la oferta es baja, los precios suben."
+    },
+    "volatility": {
+      "title": "Volatilidad del Mercado",
+      "description": "Las señales de trading en tiempo real de tu software de gráficos reaccionarán a los movimientos del mercado. Cuando las acciones están teniendo un rendimiento inferior, los inversores se vuelven hacia el oro. Cuando las expectativas del mercado de valores son alcistas, los niveles de trading de oro disminuyen."
+    },
+    "geopolitics": {
+      "title": "Geopolítica",
+      "description": "Una simple mirada al historial de precios del oro revela que las proyecciones de hoy están influenciadas por influencias geopolíticas. La incertidumbre en los mercados financieros hará que las empresas se apresuren hacia el oro, impulsando los precios."
+    }
+  },
+  "appInterface": {
+    "title": "Interfaz de Trading Intuitiva",
+    "subtitle": "Nuestra app cuenta con una interfaz limpia y profesional diseñada tanto para principiantes como para traders experimentados. Accede a toda la información crítica de un vistazo con nuestro dashboard optimizado.",
+    "features": [
+      "Datos de mercado en vivo y feeds de precios",
+      "Ejecución de señales con un toque",
+      "Seguimiento del rendimiento del portafolio",
+      "Herramientas de gestión de riesgo"
+    ],
+    "button": "Probar Demo"
+  },
+  "premium": {
+    "title": "Ve Premium 🥇",
+    "subtitle": "Nuestra aplicación móvil no solo proporcionará actualizaciones en vivo sobre señales de oro para usuarios Premium, sino que también te proporcionará estos beneficios.",
+    "benefits": [
+      "Los miembros PREMIUM obtienen más señales de oro, más oportunidades de trading y más ganancias.",
+      "Los miembros PREMIUM pueden abrir varios trades por día y recibir análisis para cada señal.",
+      "Los miembros PREMIUM pueden mejorar su discernimiento del mercado comparando su propio análisis con el nuestro.",
+      "Los miembros PREMIUM de Gold Sniper ganan el doble cuando salen del mercado."
+    ],
+    "expertTeam": {
+      "title": "Equipo Experto",
+      "description": "Somos un equipo de traders y analistas experimentados. Sabemos todo lo que hay que saber sobre los mercados financieros ya que tenemos más de diez años de experiencia. Desarrollamos Gold Sniper porque sabemos lo difícil que puede ser hacer trading y mantener la calma. Estamos aquí para ayudarte a mejorar tu enfoque y lograr resultados increíbles en tus cuentas."
     }
   },
   "performance": {
     "title": "93% de señales rentables con nuestras señales diarias XAUUSD",
-    "subtitle": "Nuestros usuarios confían en la precisión de señales fuertes y ejecución rápida para asegurar ganancias en el mercado del Oro.",
-    "button": "Nuestros Resultados"
-  },
-  "safeTraders": {
-    "title": "Somos traders seguros y precisos 💪",
-    "subtitle": "Con 5+ años en forex y 1000+ trades XAUUSD por mes, aseguramos solo las entradas y alertas más agudas.",
-    "button": "Nuestros Resultados"
-  },
-  "howItWorks": {
-    "title": "Es simple comenzar 🚀",
-    "steps": {
-      "download": {
-        "title": "Descarga la app",
-        "description": "Obtén GoldSniper de tu tienda de aplicaciones y crea tu cuenta en segundos."
-      },
-      "join": {
-        "title": "Únete a nuestro grupo de Telegram",
-        "description": "Conéctate con nuestra comunidad de traders exitosos y obtén insights exclusivos."
-      },
-      "copy": {
-        "title": "Comienza a copiar señales",
-        "description": "Sigue nuestros puntos de entrada y salida precisos para maximizar tus ganancias de trading."
-      }
+    "subtitle": "Nuestros usuarios confían en la fuerte precisión de señales y ejecución rápida para asegurar ganancias en el mercado del Oro.",
+    "button": "Nuestros Resultados",
+    "stats": {
+      "successRate": "Tasa de Éxito",
+      "activeUsers": "Usuarios Activos",
+      "marketCoverage": "Cobertura del Mercado",
+      "signalDelivery": "Entrega de Señales"
     },
-    "cta": "Únete a nosotros hoy y comienza a ganar 20% mensual. 💰"
+    "appPerformance": {
+      "title": "Rendimiento Comprobado de la App 📈",
+      "subtitle": "Nuestra aplicación móvil entrega resultados consistentes con procesamiento de datos en tiempo real y entrega de señales ultrarrápida. Únete a miles de traders exitosos usando nuestra plataforma diariamente."
+    }
   },
-  "download": {
-    "title": "Descárgalo gratis 🆓",
-    "subtitle": "Comienza con GoldSniper hoy. Sin cargos ocultos, sin suscripciones. Solo señales premium de trading de oro al alcance de tu mano."
+  "comprehensiveGuide": {
+    "title": "Guía Completa de Trading de Oro con GoldSniper 📚",
+    "subtitle": "Todo lo que necesitas saber sobre hacer trading de oro exitosamente con nuestro servicio profesional de señales.",
+    "sections": {
+      "realTime": {
+        "title": "Señales de Oro y Trading al Minuto 🥇",
+        "content": "Las señales de oro son extremadamente sensibles al tiempo, y debes actuar rápido para asegurar los mejores precios. Los precios pueden fluctuar increíblemente rápido, así que si recibes una notificación de señal de oro, deberías comprar o vender inmediatamente. Como resultado, si tus señales de oro están directamente vinculadas a tu teléfono, podrás ejecutar trades rápidamente. La aplicación ideal de trading de oro debería incluir varias características que te permitan acceder a información crítica, recibir alertas en tiempo real y ver a los profesionales hacer trading. ¿Por qué esperar cuando Gold Sniper combina toda esta información en una sola aplicación de trading, dándote todas las herramientas que necesitas para convertirte en un trader de oro exitoso?"
+      },
+      "global": {
+        "title": "Entendiendo las Señales Globales de Oro 🥇",
+        "content": "Las horas de trading de oro son más largas que las de prácticamente cualquier otro mercado en el mundo, permitiéndote hacer trading en cualquier momento. El mercado FX, que es usado por brokers de todo el mundo, a menudo está disponible para profesionales, traders aficionados y principiantes de todo el mundo. Las señales de Gold Sniper pueden ayudarte a mantenerte actualizado sobre lo que está pasando, sin importar dónde estés. Puedes confiar en Gold Sniper, la mejor aplicación de señales de oro, para mantenerte haciendo trading consistentemente desde prácticamente cualquier lugar. ¿Qué te está deteniendo de aniquilar los mercados si tu laptop está conectada e internet está disponible?"
+      },
+      "specifics": {
+        "title": "Específicos del Trading de Oro 🥇",
+        "content": "Cuando se trata de este metal precioso en el mercado OTC, es crítico recordar que un lote estándar equivale a 100 onzas troy. XAU es un símbolo de oro en el mercado del oro. Los brokers proporcionan a los traders la oportunidad de beneficiarse del precio de este activo transando en el par XAU/USD. El gráfico muestra el precio de una onza de metal en dólares estadounidenses. Los brokers necesitan una cantidad mínima de contrato de 0.01 del lote, lo que significa que debes tener 1,550 USD para comenzar a hacer trading de oro (incluyendo comisiones). El mayor grado de apalancamiento disponible para traders inexpertos es en promedio 1:1000; sin embargo, tratar con un volumen tan grande de fondos prestados plantea graves peligros de trading. El grado ideal de apalancamiento es 1:100. Al usar apalancamiento, es crítico prestar mucha atención a las condiciones de trading con margen. Algunos brokers establecen el Stop Out (cierre forzado de un trade con un mal resultado financiero) al 60-70 por ciento del depósito del trader, mientras que otros lo ponen al 20-30 por ciento. Además, ten en cuenta las reglas de gestión de dinero en los mercados financieros. El riesgo por transacción no debe ser más del 5-10%. Para cumplir con estos requisitos, debes depositar al menos $200 USD en una cuenta de trading."
+      },
+      "howGoldWorks": {
+        "title": "¿Cómo funciona el oro con Gold Sniper? 🥇",
+        "content": "En el mercado del oro, el oro es básicamente una moneda. Casi siempre se comercia contra el dólar estadounidense bajo el símbolo XAU/USD. Como resultado, tu enfoque debe monitorear cambios en el dólar estadounidense. Un aumento en el valor del dólar estadounidense podría reducir el valor del oro. Así que mantente actualizado en sitios web de noticias de oro para obtener información sobre tendencias y análisis futuros. Al hacer trading de oro en el mercado del oro, la liquidez es muy crucial. El oro tiene el mayor volumen promedio de trading diario de cualquier par de divisas. Puedes usar una variedad de técnicas y sistemas en tu estrategia de trading de oro como el scalping de oro. Todos ellos necesitarán examen técnico diario de gráficos de precio y volumen."
+      },
+      "startTrading": {
+        "title": "Cómo comenzar a hacer trading de oro con Gold Sniper 🥇",
+        "content": "Incluso para individuos con poca o ninguna experiencia previa o una pequeña cantidad de dinero para invertir, hacer trading de oro con Gold Sniper es la mejor opción. Algunas preguntas que puedes tener: ¿Cómo sabré cuándo una nueva señal va a entrar en efecto? ¿Debería comprar o vender, y cuánto debería pagar? ¡Nuestro servicio de señales puede responder todas estas preguntas y más!"
+      },
+      "bestApps": {
+        "title": "Mejores aplicaciones de señales de moneda de oro para usar 🥇",
+        "content": "En primer lugar, elige una aplicación que sea compatible con tus dispositivos actuales. Si usas una variedad de dispositivos móviles, busca las mejores aplicaciones de señales de oro para descargar tanto para iOS como para Android. Debido a que las señales de moneda xauusd se proporcionan en tiempo real, deberías actuar sobre ellas lo antes posible para optimizar tus posibilidades de ejecutar un trade ganador. Todos nuestros consejos se basan en análisis técnico de gráficos de oro así como en investigación fundamental de eventos económicos y noticias del mercado."
+      }
+    }
   },
-  "video": {
-    "title": "Ve GoldSniper en Acción",
-    "subtitle": "Observa cómo los traders profesionales usan nuestra aplicación móvil para recibir y ejecutar señales de trading de oro de alta precisión."
+  "downloadCta": {
+    "title": "¡Descarga la aplicación móvil Gold Sniper ahora! 🥇",
+    "subtitle": "Puedes confiar en Gold Sniper, la mejor aplicación de señales de oro, para mantenerte haciendo trading consistentemente desde prácticamente cualquier lugar. ¿Qué te está deteniendo de aniquilar los mercados si tu laptop está conectada e internet está disponible?"
   },
   "seo": {
     "home": {
