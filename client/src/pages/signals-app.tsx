@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Users, Bell, Shield, Smartphone, Activity, TrendingUp, ArrowUp, ArrowDown, DollarSign, BarChart3, Globe, Crosshair, ExternalLink, Award, X, Target } from 'lucide-react';
@@ -21,8 +21,30 @@ export default function SignalsApp() {
     }, 2000);
   };
 
+  // Ensure fade-in elements become visible when they enter the viewport
+  useEffect(() => {
+    const observerOptions: IntersectionObserverInit = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px',
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-in');
+        }
+      });
+    }, observerOptions);
+
+    const elements = document.querySelectorAll('.fade-in');
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="min-h-screen bg-black text-white">
+
       <SEOHead 
         title="GoldSniper App Features - Professional Gold Trading Signals"
         description="Discover GoldSniper's advanced features for XAUUSD trading. Get 93% accurate signals, real-time alerts, expert analysis, and professional trading tools on mobile."
